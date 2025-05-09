@@ -1,8 +1,8 @@
 {
-  "name": "webpack-blog-next",
+  "name": "blog-next",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://supermanko1102.github.io/webpack-blog-next",
+  "homepage": "https://supermanko1102.github.io/blog-next",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
