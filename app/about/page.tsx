@@ -42,10 +42,7 @@ export default function AboutPage() {
         </p>
 
         <h2>更新頻率</h2>
-        <p>
-          我會儘量每週更新 1-2
-          篇文章，涵蓋我最近學到的新技術、解決的問題，或者是對某個主題的深入研究。
-        </p>
+        <p>看要不要面試XD</p>
 
         <h2>聯繫方式</h2>
         <p>如果你有任何問題、建議或者想法，歡迎通過以下方式聯繫我：</p>
@@ -54,21 +51,11 @@ export default function AboutPage() {
           <li>
             GitHub:{" "}
             <a
-              href="https://github.com/example"
+              href="https://github.com/supermanko1102"
               target="_blank"
               rel="noopener noreferrer"
             >
-              github.com/example
-            </a>
-          </li>
-          <li>
-            Twitter:{" "}
-            <a
-              href="https://twitter.com/example"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              @example
+              supermanko1102
             </a>
           </li>
         </ul>
