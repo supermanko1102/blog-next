@@ -38,35 +38,72 @@ export default async function PostPage({
 
   return (
     <div className="container py-10 md:py-16 max-w-3xl mx-auto">
+      {/* 返回列表按鈕 */}
+      <div className="mb-6">
+        <Link
+          href="/"
+          className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md border border-primary text-primary bg-primary/10 hover:bg-primary/20 transition focus:outline-none focus:ring-2 focus:ring-primary/50"
+        >
+          ← 返回列表
+        </Link>
+      </div>
+
       {/* 分類過濾器 */}
       <section className="mb-10">
         <div className="flex flex-wrap gap-2">
-          <Badge variant="outline" className="cursor-pointer px-3 py-1 text-sm">
-            <Link href="/" className="w-full h-full block">
-              全部
-            </Link>
-          </Badge>
-
-          {categories.map((cat) => (
-            <Badge
-              key={cat}
-              variant={cat === category ? "default" : "outline"}
-              className="cursor-pointer px-3 py-1 text-sm"
+          <Link
+            href="/"
+            tabIndex={0}
+            aria-current={!category ? "page" : undefined}
+          >
+            <span
+              className={`
+                inline-block px-4 py-1.5 rounded-lg border font-medium text-sm transition
+                cursor-pointer shadow-sm focus:outline-none focus:ring-2 focus:ring-primary/50
+                active:scale-95
+                ${
+                  !category
+                    ? "border-primary bg-primary/10 text-primary font-bold"
+                    : "border-gray-300 text-gray-700 hover:border-primary hover:bg-primary/5 hover:text-primary"
+                }
+              `}
             >
-              <Link href={`/categories/${cat}`} className="w-full h-full block">
+              全部
+            </span>
+          </Link>
+          {categories.map((cat) => (
+            <Link
+              key={cat}
+              href={`/categories/${cat}`}
+              tabIndex={0}
+              aria-current={cat === category ? "page" : undefined}
+            >
+              <span
+                className={`
+                  inline-block px-4 py-1.5 rounded-lg border font-medium text-sm transition
+                  cursor-pointer shadow-sm focus:outline-none focus:ring-2 focus:ring-primary/50
+                  active:scale-95
+                  ${
+                    cat === category
+                      ? "border-primary bg-primary/10 text-primary font-bold"
+                      : "border-gray-300 text-gray-700 hover:border-primary hover:bg-primary/5 hover:text-primary"
+                  }
+                `}
+              >
                 {getCategoryTitle(cat)}
-              </Link>
-            </Badge>
+              </span>
+            </Link>
           ))}
         </div>
       </section>
 
-      <article className="prose prose-lg dark:prose-invert max-w-none">
+      {/* 文章內容卡片 */}
+      <article className="prose prose-lg dark:prose-invert max-w-none bg-white/90 dark:bg-zinc-900/80 rounded-xl shadow-md p-8 mb-8">
         <header className="mb-8">
           <h1 className="text-4xl font-bold tracking-tight mb-4">
             {post.title}
           </h1>
-          <div className="flex items-center gap-4 text-muted-foreground">
+          <div className="flex items-center gap-4 text-muted-foreground text-base mb-2">
             <time dateTime={post.date}>
               {new Date(post.date).toLocaleDateString("zh-TW", {
                 year: "numeric",
@@ -74,12 +111,15 @@ export default async function PostPage({
                 day: "numeric",
               })}
             </time>
-            <Badge variant="secondary">{categoryTitle}</Badge>
+            <Badge
+              variant="secondary"
+              className="bg-primary/10 text-primary border border-primary/30"
+            >
+              {categoryTitle}
+            </Badge>
           </div>
+          <Separator className="my-6" />
         </header>
-
-        <Separator className="my-8" />
-
         <div
           className="prose prose-lg dark:prose-invert max-w-none"
           dangerouslySetInnerHTML={{ __html: post.content }}

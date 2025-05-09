@@ -49,7 +49,7 @@ export default function AboutPage() {
         <ul>
           <li>Email: example@example.com</li>
           <li>
-            GitHub:{" "}
+            GitHub:
             <a
               href="https://github.com/supermanko1102"
               target="_blank"
