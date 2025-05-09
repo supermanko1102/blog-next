@@ -1,12 +1,11 @@
-// app/page.tsx
-"use client";
-
 import Link from "next/link";
-import { getSortedPostsData, type PostMeta } from "@/lib/posts";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import { useSearchParams, useRouter, usePathname } from "next/navigation";
-import { useState, useEffect } from "react";
+import {
+  getSortedPostsData,
+  getAllCategories,
+  type PostMeta,
+} from "@/lib/posts";
 
 // 格式化日期的函數
 function formatDate(dateString: string): string {
@@ -32,61 +31,33 @@ function getCategoryTitle(category: string): string {
   return categoryMappings[category.toLowerCase()] || category;
 }
 
-export default function Home() {
-  const searchParams = useSearchParams();
-  const router = useRouter();
-  const pathname = usePathname();
-  const categoryParam = searchParams.get("category");
+// 生成靜態路徑
+export async function generateStaticParams() {
+  const categories = getAllCategories();
+  return categories.map((category) => ({
+    category: category.toLowerCase(),
+  }));
+}
 
-  const allPosts: PostMeta[] = getSortedPostsData();
-  const [filteredPosts, setFilteredPosts] = useState<PostMeta[]>([]);
-  const [currentCategory, setCurrentCategory] = useState<string | null>(
-    categoryParam
-  );
+export default function CategoryPage({
+  params,
+}: {
+  params: { category: string };
+}) {
+  const { category } = params;
+  const categoryTitle = getCategoryTitle(category);
 
-  // 獲取所有可用分類
-  const allCategories = Array.from(
-    new Set(allPosts.map((post) => post.category || "uncategorized"))
-  );
-
-  // 當URL參數或所有文章變化時更新過濾內容
-  useEffect(() => {
-    const category = searchParams.get("category");
-    setCurrentCategory(category);
-
-    if (category) {
-      setFilteredPosts(
-        allPosts.filter(
-          (post) => post.category?.toLowerCase() === category.toLowerCase()
-        )
-      );
-    } else {
-      setFilteredPosts(allPosts);
-    }
-  }, [searchParams, allPosts]);
-
-  // 處理分類點擊 - 針對 GitHub Pages 做適配
-  const handleCategoryClick = (category: string | null) => {
-    // 獲取當前路徑，確保在不同環境下都能正確導航
-    if (category) {
-      router.push(`${pathname}?category=${category}`);
-    } else {
-      router.push(pathname);
-    }
-  };
+  const posts: PostMeta[] = getSortedPostsData(category);
 
   // 按日期對文章進行分組
-  const postsByYear = filteredPosts.reduce(
-    (acc: Record<string, PostMeta[]>, post) => {
-      const year = new Date(post.date).getFullYear().toString();
-      if (!acc[year]) {
-        acc[year] = [];
-      }
-      acc[year].push(post);
-      return acc;
-    },
-    {}
-  );
+  const postsByYear = posts.reduce((acc: Record<string, PostMeta[]>, post) => {
+    const year = new Date(post.date).getFullYear().toString();
+    if (!acc[year]) {
+      acc[year] = [];
+    }
+    acc[year].push(post);
+    return acc;
+  }, {});
 
   // 獲取年份並排序
   const years = Object.keys(postsByYear).sort(
@@ -97,36 +68,12 @@ export default function Home() {
     <div className="container py-10 md:py-16 max-w-3xl mx-auto">
       <section className="mb-12">
         <h1 className="text-4xl font-bold tracking-tight mb-4">
-          前端技術學習筆記
+          {categoryTitle} 學習筆記
         </h1>
         <p className="text-lg text-muted-foreground mb-6">
-          記錄我在學習前端技術過程中的心得與技巧
+          關於 {categoryTitle} 的文章和學習心得
         </p>
         <Separator className="w-32 bg-primary h-0.5 my-6" />
-      </section>
-
-      {/* 分類過濾器 */}
-      <section className="mb-10">
-        <div className="flex flex-wrap gap-2">
-          <Badge
-            variant={currentCategory === null ? "default" : "outline"}
-            className="cursor-pointer px-3 py-1 text-sm"
-            onClick={() => handleCategoryClick(null)}
-          >
-            全部
-          </Badge>
-
-          {allCategories.map((category) => (
-            <Badge
-              key={category}
-              variant={currentCategory === category ? "default" : "outline"}
-              className="cursor-pointer px-3 py-1 text-sm"
-              onClick={() => handleCategoryClick(category)}
-            >
-              {getCategoryTitle(category)}
-            </Badge>
-          ))}
-        </div>
       </section>
 
       <section>
@@ -150,7 +97,7 @@ export default function Home() {
                         {formatDate(post.date)}
                       </Badge>
                     </div>
-                    <div className="flex justify-between items-center text-muted-foreground text-sm mt-2">
+                    <div className="text-muted-foreground text-sm mt-2">
                       <Link
                         href={`/posts/${post.slug}`}
                         className="text-primary hover:underline inline-flex items-center"
@@ -172,18 +119,6 @@ export default function Home() {
                           <path d="m12 5 7 7-7 7"></path>
                         </svg>
                       </Link>
-
-                      {post.category && (
-                        <Badge
-                          variant="secondary"
-                          className="hover:bg-secondary/80 cursor-pointer"
-                          onClick={() =>
-                            post.category && handleCategoryClick(post.category)
-                          }
-                        >
-                          {getCategoryTitle(post.category)}
-                        </Badge>
-                      )}
                     </div>
                   </article>
                 </li>
@@ -193,13 +128,9 @@ export default function Home() {
         ))}
       </section>
 
-      {filteredPosts.length === 0 && (
+      {posts.length === 0 && (
         <section className="flex flex-col items-center justify-center py-16 text-center">
-          <h2 className="text-2xl font-bold mb-4">
-            {currentCategory
-              ? `沒有找到 ${getCategoryTitle(currentCategory)} 分類的文章`
-              : "目前還沒有文章"}
-          </h2>
+          <h2 className="text-2xl font-bold mb-4">此分類下還沒有文章</h2>
           <p className="text-muted-foreground">
             我們正在努力創作更多內容，敬請期待...
           </p>
