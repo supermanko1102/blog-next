@@ -1,12 +1,14 @@
 // app/page.tsx
-"use client";
+// 移除 "use client" 指令，使其成為伺服器元件
 
 import Link from "next/link";
-import { getSortedPostsData, type PostMeta } from "@/lib/posts";
+import {
+  getSortedPostsData,
+  type PostMeta,
+  getAllCategories,
+} from "@/lib/posts";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import { useSearchParams, useRouter, usePathname } from "next/navigation";
-import { useState, useEffect } from "react";
 
 // 格式化日期的函數
 function formatDate(dateString: string): string {
@@ -32,48 +34,24 @@ function getCategoryTitle(category: string): string {
   return categoryMappings[category.toLowerCase()] || category;
 }
 
-export default function Home() {
-  const searchParams = useSearchParams();
-  const router = useRouter();
-  const pathname = usePathname();
-  const categoryParam = searchParams.get("category");
+// 使用 searchParams 作為頁面的屬性
+export default function Home({
+  searchParams,
+}: {
+  searchParams: { category?: string };
+}) {
+  const categoryParam = searchParams.category || null;
 
+  // 伺服器端獲取數據
   const allPosts: PostMeta[] = getSortedPostsData();
-  const [filteredPosts, setFilteredPosts] = useState<PostMeta[]>([]);
-  const [currentCategory, setCurrentCategory] = useState<string | null>(
-    categoryParam
-  );
+  const allCategories = getAllCategories();
 
-  // 獲取所有可用分類
-  const allCategories = Array.from(
-    new Set(allPosts.map((post) => post.category || "uncategorized"))
-  );
-
-  // 當URL參數或所有文章變化時更新過濾內容
-  useEffect(() => {
-    const category = searchParams.get("category");
-    setCurrentCategory(category);
-
-    if (category) {
-      setFilteredPosts(
-        allPosts.filter(
-          (post) => post.category?.toLowerCase() === category.toLowerCase()
-        )
-      );
-    } else {
-      setFilteredPosts(allPosts);
-    }
-  }, [searchParams, allPosts]);
-
-  // 處理分類點擊 - 針對 GitHub Pages 做適配
-  const handleCategoryClick = (category: string | null) => {
-    // 獲取當前路徑，確保在不同環境下都能正確導航
-    if (category) {
-      router.push(`${pathname}?category=${category}`);
-    } else {
-      router.push(pathname);
-    }
-  };
+  // 過濾文章
+  const filteredPosts = categoryParam
+    ? allPosts.filter(
+        (post) => post.category?.toLowerCase() === categoryParam.toLowerCase()
+      )
+    : allPosts;
 
   // 按日期對文章進行分組
   const postsByYear = filteredPosts.reduce(
@@ -109,21 +87,26 @@ export default function Home() {
       <section className="mb-10">
         <div className="flex flex-wrap gap-2">
           <Badge
-            variant={currentCategory === null ? "default" : "outline"}
+            variant={categoryParam === null ? "default" : "outline"}
             className="cursor-pointer px-3 py-1 text-sm"
-            onClick={() => handleCategoryClick(null)}
           >
-            全部
+            <Link href="/" className="w-full h-full block">
+              全部
+            </Link>
           </Badge>
 
           {allCategories.map((category) => (
             <Badge
               key={category}
-              variant={currentCategory === category ? "default" : "outline"}
+              variant={categoryParam === category ? "default" : "outline"}
               className="cursor-pointer px-3 py-1 text-sm"
-              onClick={() => handleCategoryClick(category)}
             >
-              {getCategoryTitle(category)}
+              <Link
+                href={`/?category=${category}`}
+                className="w-full h-full block"
+              >
+                {getCategoryTitle(category)}
+              </Link>
             </Badge>
           ))}
         </div>
@@ -177,11 +160,10 @@ export default function Home() {
                         <Badge
                           variant="secondary"
                           className="hover:bg-secondary/80 cursor-pointer"
-                          onClick={() =>
-                            post.category && handleCategoryClick(post.category)
-                          }
                         >
-                          {getCategoryTitle(post.category)}
+                          <Link href={`/?category=${post.category}`}>
+                            {getCategoryTitle(post.category)}
+                          </Link>
                         </Badge>
                       )}
                     </div>
@@ -196,8 +178,8 @@ export default function Home() {
       {filteredPosts.length === 0 && (
         <section className="flex flex-col items-center justify-center py-16 text-center">
           <h2 className="text-2xl font-bold mb-4">
-            {currentCategory
-              ? `沒有找到 ${getCategoryTitle(currentCategory)} 分類的文章`
+            {categoryParam
+              ? `沒有找到 ${getCategoryTitle(categoryParam)} 分類的文章`
               : "目前還沒有文章"}
           </h2>
           <p className="text-muted-foreground">

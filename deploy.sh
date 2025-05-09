@@ -29,7 +29,6 @@ git commit -m "Deploy to GitHub Pages"
 # 推送到 gh-pages 分支
 # 注意：將 USER/REPO 替換為您的 GitHub 用戶名和倉庫名
 echo "Pushing to GitHub Pages..."
-git push -f git@github.com:USER/webpack-blog-next.git master:gh-pages
-
+git push -f git@github.com:supermanko1102/blog-next.git master:gh-pages
 cd ..
 echo "Deployment complete!" 

@@ -4,7 +4,7 @@ import type { NextConfig } from "next";
 import type { Configuration as WebpackConfig } from "webpack";
 
 const isProduction = process.env.NODE_ENV === "production";
-const repoName = "webpack-blog-next"; // 替換為您的 GitHub 倉庫名稱
+const repoName = "blog-next"; // 替換為您的 GitHub 倉庫名稱
 
 const nextConfig: NextConfig = {
   output: "export", // 產生靜態 HTML 檔案

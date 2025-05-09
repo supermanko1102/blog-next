@@ -39,11 +39,15 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function CategoryPage({
-  params,
-}: {
-  params: { category: string };
-}) {
+// 正確的 Next.js 頁面參數類型
+type Props = {
+  params: {
+    category: string;
+  };
+};
+
+// 頁面元件
+export default function CategoryPage({ params }: Props) {
   const { category } = params;
   const categoryTitle = getCategoryTitle(category);
 
