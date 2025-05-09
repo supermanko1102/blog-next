@@ -1,0 +1,145 @@
+1:"$Sreact.fragment"
+2:I[6874,["747","static/chunks/747-b7bdb0811c3cccaa.js","277","static/chunks/277-0e2bea38edafe8ba.js","616","static/chunks/app/blog/%5Bcategory%5D/%5Bslug%5D/page-2dd13fe8ea24f9ea.js"],""]
+3:I[4624,["747","static/chunks/747-b7bdb0811c3cccaa.js","277","static/chunks/277-0e2bea38edafe8ba.js","616","static/chunks/app/blog/%5Bcategory%5D/%5Bslug%5D/page-2dd13fe8ea24f9ea.js"],"Slot"]
+4:I[7555,[],""]
+5:I[1295,[],""]
+7:I[9665,[],"MetadataBoundary"]
+9:I[9665,[],"OutletBoundary"]
+c:I[4911,[],"AsyncMetadataOutlet"]
+e:I[9665,[],"ViewportBoundary"]
+10:I[6614,[],""]
+:HL["/blog-next/_next/static/media/a34f9d1faa5f3315-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/blog-next/_next/static/css/43fed997dee265cd.css","style"]
+0:{"P":null,"b":"JlbuqNYeBfcXTGofrWtMq","p":"/blog-next","c":["","blog","webpack","dev-server",""],"i":false,"f":[[["",{"children":["blog",{"children":[["category","webpack","d"],{"children":[["slug","dev-server","d"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/blog-next/_next/static/css/43fed997dee265cd.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-TW","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","title",null,{"children":"前端技術學習筆記"}],["$","meta",null,{"name":"description","content":"記錄前端技術學習過程中的心得與技巧，包含 JavaScript、React、Webpack 等主題"}],["$","link",null,{"rel":"icon","href":"/favicon.ico"}]]}],["$","body",null,{"className":"__variable_6cd0fc min-h-screen bg-background font-sans antialiased","children":["$","div",null,{"className":"relative flex min-h-screen flex-col","children":[["$","header",null,{"className":"sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur","children":["$","div",null,{"className":"container flex h-16 items-center","children":[["$","div",null,{"className":"mr-4 flex","children":["$","$L2",null,{"href":"/","className":"flex items-center","children":[["$","svg",null,{"viewBox":"0 0 900 900","className":"h-8 w-8 mr-2","xmlns":"http://www.w3.org/2000/svg","fill":"currentColor","children":["$","path",null,{"d":"M821.146 870.85L571.547 500l249.599-370.85L500 258.193 178.854 29.15 428.453 400 178.854 770.85 500 641.807z"}]}],["$","span",null,{"className":"font-bold text-xl","children":"學習筆記"}]]}]}],["$","nav",null,{"className":"ml-auto flex space-x-2","children":[["$","$L3",null,{"data-slot":"button","className":"inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5","children":["$","$L2",null,{"href":"/?category=javascript","scroll":false,"children":"JavaScript"}]}],["$","$L3",null,{"data-slot":"button","className":"inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5","children":["$","$L2",null,{"href":"/?category=react","scroll":false,"children":"React"}]}],["$","$L3",null,{"data-slot":"button","className":"inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5","children":["$","$L2",null,{"href":"/?category=webpack","scroll":false,"children":"Webpack"}]}],["$","$L3",null,{"data-slot":"button","className":"inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5","children":["$","$L2",null,{"href":"/about","children":"關於"}]}]]}]]}]}],["$","main",null,{"className":"flex-1","children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"border-t py-6 md:py-8","children":["$","div",null,{"className":"container flex flex-col items-center justify-center gap-4 md:flex-row","children":["$","p",null,{"className":"text-center text-sm text-muted-foreground","children":["© ",2025," 前端技術學習筆記. 保留所有權利."]}]}]}]]}]}]]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["category","webpack","d"],["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","dev-server","d"],["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L6",["$","$L7",null,{"children":"$L8"}],null,["$","$L9",null,{"children":["$La","$Lb",["$","$Lc",null,{"promise":"$@d"}]]}]]}],{},null,false]},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","rJoXyFQodOBvkTZDjnA-8",{"children":[["$","$Le",null,{"children":"$Lf"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],null]}],false]],"m":"$undefined","G":["$10","$undefined"],"s":false,"S":true}
+11:"$Sreact.suspense"
+12:I[4911,[],"AsyncMetadata"]
+8:["$","$11",null,{"fallback":null,"children":["$","$L12",null,{"promise":"$@13"}]}]
+b:null
+14:I[7620,["747","static/chunks/747-b7bdb0811c3cccaa.js","277","static/chunks/277-0e2bea38edafe8ba.js","616","static/chunks/app/blog/%5Bcategory%5D/%5Bslug%5D/page-2dd13fe8ea24f9ea.js"],"Separator"]
+15:T148e,<h2>什麼是 Webpack Dev Server？</h2>
+<p>Webpack Dev Server 是一個輕量級的開發伺服器，它使用 Express.js 作為後端，提供了開發過程中的許多便利功能。它最大的優勢是提供了「實時重載」（Live Reloading）和「熱模組替換」（Hot Module Replacement, HMR）的能力，大幅提升了前端開發的效率。</p>
+<h2>為什麼需要 Dev Server？</h2>
+<p>在傳統的開發流程中，每次修改代碼後都需要手動打包並重新整理瀏覽器，這個過程非常繁瑣且浪費時間。而 Webpack Dev Server 可以幫我們解決這個問題：</p>
+<ol>
+<li>自動打包：檔案變更後自動重新打包</li>
+<li>自動重載：改變後自動重新整理頁面</li>
+<li>熱模組替換：在不重新整理頁面的情況下，替換更新的模組</li>
+<li>提供開發用伺服器：無需配置額外的靜態文件伺服器</li>
+</ol>
+<h2>安裝與基本配置</h2>
+<p>首先，安裝 webpack-dev-server：</p>
+<pre><code class="language-bash">npm install webpack-dev-server --save-dev
+</code></pre>
+<p>在 webpack.config.js 中配置：</p>
+<pre><code class="language-javascript">module.exports = {
+  // ...其他配置
+
+  devServer: {
+    static: "./dist",
+    port: 8080,
+    open: true, // 自動打開瀏覽器
+    hot: true, // 啟用 HMR
+    compress: true, // 啟用 gzip 壓縮
+  },
+};
+</code></pre>
+<p>在 package.json 中添加啟動命令：</p>
+<pre><code class="language-json">"scripts": {
+  "start": "webpack serve --mode development",
+  "build": "webpack --mode production"
+}
+</code></pre>
+<h2>實時重載 vs 熱模組替換</h2>
+<p><strong>實時重載 (Live Reloading)</strong>：
+當檔案變更時，整個頁面會重新載入。這是最基本的功能，不需要額外配置。</p>
+<p><strong>熱模組替換 (HMR)</strong>：
+只替換變更的模組，保留應用程式狀態。例如，修改 CSS 時只更新樣式，而不會重新整理整個頁面。</p>
+<p>啟用 HMR 需要在配置中設置 <code>hot: true</code>，並在入口檔案中添加：</p>
+<pre><code class="language-javascript">if (module.hot) {
+  module.hot.accept();
+}
+</code></pre>
+<h2>進階配置選項</h2>
+<h3>1. 代理 API 請求</h3>
+<p>解決跨域問題，將 API 請求代理到另一個服務器：</p>
+<pre><code class="language-javascript">devServer: {
+  proxy: {
+    '/api': {
+      target: 'http://localhost:3000',
+      pathRewrite: { '^/api': '' },
+      changeOrigin: true
+    }
+  }
+}
+</code></pre>
+<h3>2. 設置 HTTPS</h3>
+<p>為本地開發環境啟用 HTTPS：</p>
+<pre><code class="language-javascript">devServer: {
+  https: true;
+}
+</code></pre>
+<p>如果需要自定義證書：</p>
+<pre><code class="language-javascript">const fs = require('fs');
+const path = require('path');
+
+devServer: {
+  https: {
+    key: fs.readFileSync(path.resolve(__dirname, 'cert/server.key')),
+    cert: fs.readFileSync(path.resolve(__dirname, 'cert/server.crt')),
+    ca: fs.readFileSync(path.resolve(__dirname, 'cert/ca.pem')),
+  }
+}
+</code></pre>
+<h3>3. 設置 History API Fallback</h3>
+<p>對於單頁應用 (SPA)，配置歷史記錄 API 後備：</p>
+<pre><code class="language-javascript">devServer: {
+  historyApiFallback: true;
+}
+</code></pre>
+<p>更複雜的重寫規則：</p>
+<pre><code class="language-javascript">devServer: {
+  historyApiFallback: {
+    rewrites: [
+      { from: /^\/$/, to: "/index.html" },
+      { from: /^\/subpage/, to: "/subpage.html" },
+      { from: /./, to: "/404.html" },
+    ];
+  }
+}
+</code></pre>
+<h2>使用中的技巧與心得</h2>
+<p>在我使用 Webpack Dev Server 的過程中，有一些技巧和心得可以分享：</p>
+<ol>
+<li><strong>合理配置 watchOptions</strong>：在大型專案中，可以通過 <code>watchOptions</code> 配置來優化文件監視性能</li>
+</ol>
+<pre><code class="language-javascript">devServer: {
+  watchOptions: {
+    poll: 1000, // 每秒檢查一次變動
+    ignored: /node_modules/, // 忽略 node_modules
+    aggregateTimeout: 300 // 等待 300ms 再執行，避免頻繁重建
+  }
+}
+</code></pre>
+<ol start="2">
+<li><strong>利用 overlay 顯示錯誤</strong>：在瀏覽器中直接顯示編譯錯誤</li>
+</ol>
+<pre><code class="language-javascript">devServer: {
+  client: {
+    overlay: true;
+  }
+}
+</code></pre>
+<ol start="3">
+<li><strong>結合 source map</strong>：開發環境使用適當的 source map 便於調試</li>
+</ol>
+<pre><code class="language-javascript">devtool: "eval-source-map"; // 開發環境推薦
+</code></pre>
+<h2>心得總結</h2>
+<p>Webpack Dev Server 極大地改善了我的前端開發工作流程。在我學習和使用 Webpack 的過程中，Dev Server 是最能直接感受到提升的部分。熱模組替換功能特別有用，它讓我可以即時看到修改的效果，同時保留應用程式的狀態，節省了大量測試時間。</p>
+<p>對於初學者，我建議從基本配置開始，理解實時重載和熱模組替換的區別。隨著專案的複雜度增加，可以逐步添加代理、HTTPS 等進階功能。</p>
+<p>合理配置 Webpack Dev Server 是提高前端開發效率的關鍵因素之一。這個工具的學習成本較低，但帶來的收益卻非常顯著，絕對值得每一位前端開發者投入時間學習。</p>
+6:["$","div",null,{"className":"container py-10 md:py-16 max-w-3xl mx-auto","children":[["$","section",null,{"className":"mb-10","children":["$","div",null,{"className":"flex flex-wrap gap-2","children":[["$","span",null,{"data-slot":"badge","className":"inline-flex items-center justify-center rounded-md border font-medium w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden text-foreground [a&]:hover:bg-accent [a&]:hover:text-accent-foreground cursor-pointer px-3 py-1 text-sm","children":["$","$L2",null,{"href":"/","className":"w-full h-full block","children":"全部"}]}],[["$","span","javascript",{"data-slot":"badge","className":"inline-flex items-center justify-center rounded-md border font-medium w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden text-foreground [a&]:hover:bg-accent [a&]:hover:text-accent-foreground cursor-pointer px-3 py-1 text-sm","children":["$","$L2",null,{"href":"/categories/javascript","className":"w-full h-full block","children":"JavaScript"}]}],["$","span","webpack",{"data-slot":"badge","className":"inline-flex items-center justify-center rounded-md border font-medium w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden border-transparent bg-primary text-primary-foreground [a&]:hover:bg-primary/90 cursor-pointer px-3 py-1 text-sm","children":["$","$L2",null,{"href":"/categories/webpack","className":"w-full h-full block","children":"Webpack"}]}]]]}]}],["$","article",null,{"className":"prose prose-lg dark:prose-invert max-w-none","children":[["$","header",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-4xl font-bold tracking-tight mb-4","children":"Webpack Dev Server：提升開發效率的利器"}],["$","div",null,{"className":"flex items-center gap-4 text-muted-foreground","children":[["$","time",null,{"dateTime":"$D2023-05-29T00:00:00.000Z","children":"2023年5月29日"}],["$","span",null,{"data-slot":"badge","className":"inline-flex items-center justify-center rounded-md border px-2 py-0.5 text-xs font-medium w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden border-transparent bg-secondary text-secondary-foreground [a&]:hover:bg-secondary/90","children":"Webpack"}]]}]]}],["$","$L14",null,{"className":"my-8"}],["$","div",null,{"className":"prose prose-lg dark:prose-invert max-w-none","dangerouslySetInnerHTML":{"__html":"$15"}}]]}]]}]
+f:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+a:null
+13:{"metadata":[["$","link","0",{"rel":"icon","href":"/blog-next/favicon.ico","type":"image/x-icon","sizes":"16x16"}]],"error":null,"digest":"$undefined"}
+d:{"metadata":"$13:metadata","error":null,"digest":"$undefined"}
