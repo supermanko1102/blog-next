@@ -1,6 +1,6 @@
 1:"$Sreact.fragment"
-2:I[1362,["747","static/chunks/747-75ee5d190a01c731.js","598","static/chunks/598-d6b444c04c4bc02e.js","177","static/chunks/app/layout-1cefddcafd85146c.js"],"ThemeProvider"]
-3:I[2243,["747","static/chunks/747-75ee5d190a01c731.js","598","static/chunks/598-d6b444c04c4bc02e.js","177","static/chunks/app/layout-1cefddcafd85146c.js"],"Header"]
+2:I[1362,["747","static/chunks/747-75ee5d190a01c731.js","598","static/chunks/598-d6b444c04c4bc02e.js","177","static/chunks/app/layout-f9070ac58b9f596a.js"],"ThemeProvider"]
+3:I[2243,["747","static/chunks/747-75ee5d190a01c731.js","598","static/chunks/598-d6b444c04c4bc02e.js","177","static/chunks/app/layout-f9070ac58b9f596a.js"],"Header"]
 4:I[7555,[],""]
 5:I[1295,[],""]
 6:I[6874,["747","static/chunks/747-75ee5d190a01c731.js","156","static/chunks/app/posts/%5B...slug%5D/page-34a1d1dd52304f15.js"],""]
@@ -9,182 +9,134 @@ a:I[9665,[],"OutletBoundary"]
 d:I[4911,[],"AsyncMetadataOutlet"]
 f:I[9665,[],"ViewportBoundary"]
 11:I[6614,[],""]
-:HL["/blog-next/_next/static/css/bed76deb8c5ef8bb.css","style"]
-0:{"P":null,"b":"PDTubx6TkNkh8i-1L7r_u","p":"/blog-next","c":["","posts","webpack","dev-server",""],"i":false,"f":[[["",{"children":["posts",{"children":[["slug","webpack/dev-server","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/blog-next/_next/static/css/bed76deb8c5ef8bb.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-TW","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","title",null,{"children":"前端技術學習筆記"}],["$","meta",null,{"name":"description","content":"記錄前端技術學習過程中的心得與技巧，包含 JavaScript、React、Webpack 等主題"}],["$","link",null,{"rel":"icon","href":"/favicon.ico"}]]}],["$","body",null,{"className":"min-h-screen flex flex-col","children":["$","$L2",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"disableTransitionOnChange":true,"children":[["$","$L3",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"border-t bg-background","children":["$","div",null,{"className":"container py-8 px-4 md:px-6","children":[["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-4 gap-8","children":[["$","div",null,{"className":"col-span-1 md:col-span-2","children":[["$","$L6",null,{"href":"/","className":"text-xl font-bold mb-4 block","children":"前端學習筆記"}],["$","p",null,{"className":"text-muted-foreground text-sm max-w-xs","children":"記錄前端技術學習過程中的心得與技巧，包含 JavaScript、React、Webpack 等主題"}]]}],["$","div",null,{"children":[["$","h3",null,{"className":"font-medium mb-4","children":"導航"}],["$","ul",null,{"className":"space-y-2","children":[["$","li",null,{"children":["$","$L6",null,{"href":"/","className":"text-muted-foreground text-sm hover:text-primary transition-colors","children":"首頁"}]}],["$","li",null,{"children":["$","$L6",null,{"href":"/posts","className":"text-muted-foreground text-sm hover:text-primary transition-colors","children":"文章"}]}],["$","li",null,{"children":["$","$L6",null,{"href":"/categories","className":"text-muted-foreground text-sm hover:text-primary transition-colors","children":"分類"}]}],["$","li",null,{"children":["$","$L6",null,{"href":"/about","className":"text-muted-foreground text-sm hover:text-primary transition-colors","children":"關於"}]}]]}]]}],["$","div",null,{"children":[["$","h3",null,{"className":"font-medium mb-4","children":"社交媒體"}],["$","ul",null,{"className":"space-y-2","children":["$","li",null,{"children":["$","$L6",null,{"href":"https://github.com","target":"_blank","rel":"noreferrer","className":"flex items-center gap-2 text-muted-foreground text-sm hover:text-primary transition-colors","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-github h-4 w-4","aria-hidden":"true","children":[["$","path","tonef",{"d":"M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"}],["$","path","9comsn",{"d":"M9 18c-4.51 2-5-2-7-2"}],"$undefined"]}],["$","span",null,{"children":"GitHub"}]]}]}]}]]}]]}],["$","div",null,{"className":"mt-8 pt-8 border-t text-center","children":["$","p",null,{"className":"text-sm text-muted-foreground","children":["© ",2025," 前端學習筆記. 版權所有."]}]}]]}]}]]}]}]]}]]}],{"children":["posts",["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","webpack/dev-server","c"],["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L7",["$","$L8",null,{"children":"$L9"}],null,["$","$La",null,{"children":["$Lb","$Lc",["$","$Ld",null,{"promise":"$@e"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","rIejxmQ-YwlLUtBVoCLG-",{"children":[["$","$Lf",null,{"children":"$L10"}],null]}],null]}],false]],"m":"$undefined","G":["$11","$undefined"],"s":false,"S":true}
+:HL["/blog-next/_next/static/css/7f19a4fee63d473d.css","style"]
+0:{"P":null,"b":"eBvrwOmRNyw9Vv7ELMFoY","p":"/blog-next","c":["","posts","webpack","dev-server",""],"i":false,"f":[[["",{"children":["posts",{"children":[["slug","webpack/dev-server","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/blog-next/_next/static/css/7f19a4fee63d473d.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-TW","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","title",null,{"children":"前端技術學習筆記"}],["$","meta",null,{"name":"description","content":"記錄前端技術學習過程中的心得與技巧，包含 JavaScript、React、Webpack 等主題"}],["$","link",null,{"rel":"icon","href":"/favicon.ico"}]]}],["$","body",null,{"className":"min-h-screen flex flex-col","children":["$","$L2",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"disableTransitionOnChange":true,"children":[["$","$L3",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"border-t bg-background","children":["$","div",null,{"className":"container py-8 px-4 md:px-6","children":[["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-4 gap-8","children":[["$","div",null,{"className":"col-span-1 md:col-span-2","children":[["$","$L6",null,{"href":"/","className":"text-xl font-bold mb-4 block","children":"前端學習筆記"}],["$","p",null,{"className":"text-muted-foreground text-sm max-w-xs","children":"記錄前端技術學習過程中的心得與技巧，包含 JavaScript、React、Webpack 等主題"}]]}],["$","div",null,{"children":[["$","h3",null,{"className":"font-medium mb-4","children":"導航"}],["$","ul",null,{"className":"space-y-2","children":[["$","li",null,{"children":["$","$L6",null,{"href":"/","className":"text-muted-foreground text-sm hover:text-primary transition-colors","children":"首頁"}]}],["$","li",null,{"children":["$","$L6",null,{"href":"/posts","className":"text-muted-foreground text-sm hover:text-primary transition-colors","children":"文章"}]}],["$","li",null,{"children":["$","$L6",null,{"href":"/categories","className":"text-muted-foreground text-sm hover:text-primary transition-colors","children":"分類"}]}],["$","li",null,{"children":["$","$L6",null,{"href":"/about","className":"text-muted-foreground text-sm hover:text-primary transition-colors","children":"關於"}]}]]}]]}],["$","div",null,{"children":[["$","h3",null,{"className":"font-medium mb-4","children":"社交媒體"}],["$","ul",null,{"className":"space-y-2","children":["$","li",null,{"children":["$","$L6",null,{"href":"https://github.com","target":"_blank","rel":"noreferrer","className":"flex items-center gap-2 text-muted-foreground text-sm hover:text-primary transition-colors","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-github h-4 w-4","aria-hidden":"true","children":[["$","path","tonef",{"d":"M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"}],["$","path","9comsn",{"d":"M9 18c-4.51 2-5-2-7-2"}],"$undefined"]}],["$","span",null,{"children":"GitHub"}]]}]}]}]]}]]}],["$","div",null,{"className":"mt-8 pt-8 border-t text-center","children":["$","p",null,{"className":"text-sm text-muted-foreground","children":["© ",2025," 前端學習筆記. 版權所有."]}]}]]}]}]]}]}]]}]]}],{"children":["posts",["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","webpack/dev-server","c"],["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L7",["$","$L8",null,{"children":"$L9"}],null,["$","$La",null,{"children":["$Lb","$Lc",["$","$Ld",null,{"promise":"$@e"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","fEnTOGRtxyN9VPRJrMMcR",{"children":[["$","$Lf",null,{"children":"$L10"}],null]}],null]}],false]],"m":"$undefined","G":["$11","$undefined"],"s":false,"S":true}
 12:"$Sreact.suspense"
 13:I[4911,[],"AsyncMetadata"]
 9:["$","$12",null,{"fallback":null,"children":["$","$L13",null,{"promise":"$@14"}]}]
 c:null
-15:T11a4,
-## 什麼是 Webpack Dev Server？
-
-Webpack Dev Server 是一個輕量級的開發伺服器，它使用 Express.js 作為後端，提供了開發過程中的許多便利功能。它最大的優勢是提供了「實時重載」（Live Reloading）和「熱模組替換」（Hot Module Replacement, HMR）的能力，大幅提升了前端開發的效率。
-
-## 為什麼需要 Dev Server？
-
-在傳統的開發流程中，每次修改代碼後都需要手動打包並重新整理瀏覽器，這個過程非常繁瑣且浪費時間。而 Webpack Dev Server 可以幫我們解決這個問題：
-
-1. 自動打包：檔案變更後自動重新打包
-2. 自動重載：改變後自動重新整理頁面
-3. 熱模組替換：在不重新整理頁面的情況下，替換更新的模組
-4. 提供開發用伺服器：無需配置額外的靜態文件伺服器
-
-## 安裝與基本配置
-
-首先，安裝 webpack-dev-server：
-
-```bash
-npm install webpack-dev-server --save-dev
-```
-
-在 webpack.config.js 中配置：
-
-```javascript
-module.exports = {
-  // ...其他配置
-
-  devServer: {
-    static: "./dist",
-    port: 8080,
-    open: true, // 自動打開瀏覽器
-    hot: true, // 啟用 HMR
-    compress: true, // 啟用 gzip 壓縮
-  },
-};
-```
-
-在 package.json 中添加啟動命令：
-
-```json
-"scripts": {
-  "start": "webpack serve --mode development",
-  "build": "webpack --mode production"
-}
-```
-
-## 實時重載 vs 熱模組替換
-
-**實時重載 (Live Reloading)**：
-當檔案變更時，整個頁面會重新載入。這是最基本的功能，不需要額外配置。
-
-**熱模組替換 (HMR)**：
-只替換變更的模組，保留應用程式狀態。例如，修改 CSS 時只更新樣式，而不會重新整理整個頁面。
-
-啟用 HMR 需要在配置中設置 `hot: true`，並在入口檔案中添加：
-
-```javascript
-if (module.hot) {
-  module.hot.accept();
-}
-```
-
-## 進階配置選項
-
-### 1. 代理 API 請求
-
-解決跨域問題，將 API 請求代理到另一個服務器：
-
-```javascript
-devServer: {
-  proxy: {
-    '/api': {
-      target: 'http://localhost:3000',
-      pathRewrite: { '^/api': '' },
-      changeOrigin: true
-    }
-  }
-}
-```
-
-### 2. 設置 HTTPS
-
-為本地開發環境啟用 HTTPS：
-
-```javascript
-devServer: {
-  https: true;
-}
-```
-
-如果需要自定義證書：
-
-```javascript
-const fs = require('fs');
-const path = require('path');
-
-devServer: {
-  https: {
-    key: fs.readFileSync(path.resolve(__dirname, 'cert/server.key')),
-    cert: fs.readFileSync(path.resolve(__dirname, 'cert/server.crt')),
-    ca: fs.readFileSync(path.resolve(__dirname, 'cert/ca.pem')),
-  }
-}
-```
-
-### 3. 設置 History API Fallback
-
-對於單頁應用 (SPA)，配置歷史記錄 API 後備：
-
-```javascript
-devServer: {
-  historyApiFallback: true;
-}
-```
-
-更複雜的重寫規則：
-
-```javascript
-devServer: {
-  historyApiFallback: {
-    rewrites: [
-      { from: /^\/$/, to: "/index.html" },
-      { from: /^\/subpage/, to: "/subpage.html" },
-      { from: /./, to: "/404.html" },
-    ];
-  }
-}
-```
-
-## 使用中的技巧與心得
-
-在我使用 Webpack Dev Server 的過程中，有一些技巧和心得可以分享：
-
-1. **合理配置 watchOptions**：在大型專案中，可以通過 `watchOptions` 配置來優化文件監視性能
-
-```javascript
-devServer: {
-  watchOptions: {
-    poll: 1000, // 每秒檢查一次變動
-    ignored: /node_modules/, // 忽略 node_modules
-    aggregateTimeout: 300 // 等待 300ms 再執行，避免頻繁重建
-  }
-}
-```
-
-2. **利用 overlay 顯示錯誤**：在瀏覽器中直接顯示編譯錯誤
-
-```javascript
-devServer: {
-  client: {
-    overlay: true;
-  }
-}
-```
-
-3. **結合 source map**：開發環境使用適當的 source map 便於調試
-
-```javascript
-devtool: "eval-source-map"; // 開發環境推薦
-```
-
-## 心得總結
-
-Webpack Dev Server 極大地改善了我的前端開發工作流程。在我學習和使用 Webpack 的過程中，Dev Server 是最能直接感受到提升的部分。熱模組替換功能特別有用，它讓我可以即時看到修改的效果，同時保留應用程式的狀態，節省了大量測試時間。
-
-對於初學者，我建議從基本配置開始，理解實時重載和熱模組替換的區別。隨著專案的複雜度增加，可以逐步添加代理、HTTPS 等進階功能。
-
-合理配置 Webpack Dev Server 是提高前端開發效率的關鍵因素之一。這個工具的學習成本較低，但帶來的收益卻非常顯著，絕對值得每一位前端開發者投入時間學習。
-7:["$","div",null,{"className":"container mx-auto py-8 px-4 md:px-6 max-w-4xl","children":[["$","div",null,{"className":"mb-8","children":["$","$L6",null,{"href":"/","className":"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left mr-2 h-4 w-4","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}]," 返回首頁"]}]}],["$","article",null,{"className":"prose dark:prose-invert max-w-none","children":[["$","h1",null,{"className":"text-3xl md:text-4xl font-bold mb-4","children":"Webpack Dev Server：提升開發效率的利器"}],["$","div",null,{"className":"flex items-center gap-4 text-muted-foreground mb-8","children":[["$","div",null,{"className":"flex items-center gap-1","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-calendar h-4 w-4","aria-hidden":"true","children":[["$","path","1cmpym",{"d":"M8 2v4"}],["$","path","4m81vk",{"d":"M16 2v4"}],["$","rect","1hopcy",{"width":"18","height":"18","x":"3","y":"4","rx":"2"}],["$","path","8toen8",{"d":"M3 10h18"}],"$undefined"]}],["$","span",null,{"children":"2023/5/29"}]]}],["$","div",null,{"className":"flex items-center gap-1","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-tag h-4 w-4","aria-hidden":"true","children":[["$","path","vktsd0",{"d":"M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"}],["$","circle","kqv944",{"cx":"7.5","cy":"7.5","r":".5","fill":"currentColor"}],"$undefined"]}],["$","$L6",null,{"href":"/category/webpack","className":"hover:text-primary transition-colors capitalize","children":"webpack"}]]}]]}],["$","div",null,{"className":"leading-relaxed","children":["$","div",null,{"className":"whitespace-pre-wrap","children":"$15"}]}]]}]]}]
+15:T4e2c,<h2>什麼是 Webpack Dev Server？</h2>
+<p>Webpack Dev Server 是一個輕量級的開發伺服器，它使用 Express.js 作為後端，提供了開發過程中的許多便利功能。它最大的優勢是提供了「實時重載」（Live Reloading）和「熱模組替換」（Hot Module Replacement, HMR）的能力，大幅提升了前端開發的效率。</p>
+<h2>為什麼需要 Dev Server？</h2>
+<p>在傳統的開發流程中，每次修改代碼後都需要手動打包並重新整理瀏覽器，這個過程非常繁瑣且浪費時間。而 Webpack Dev Server 可以幫我們解決這個問題：</p>
+<ol>
+<li>自動打包：檔案變更後自動重新打包</li>
+<li>自動重載：改變後自動重新整理頁面</li>
+<li>熱模組替換：在不重新整理頁面的情況下，替換更新的模組</li>
+<li>提供開發用伺服器：無需配置額外的靜態文件伺服器</li>
+</ol>
+<h2>安裝與基本配置</h2>
+<p>首先，安裝 webpack-dev-server：</p>
+<pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line line-number" line="1"><span class="token function">npm</span> <span class="token function">install</span> webpack-dev-server --save-dev
+</span></code></pre>
+<p>在 webpack.config.js 中配置：</p>
+<pre class="language-javascript"><code class="language-javascript code-highlight"><span class="code-line line-number" line="1">module<span class="token punctuation">.</span><span class="token property-access">exports</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="2">  <span class="token comment">// ...其他配置</span>
+</span><span class="code-line line-number" line="3">
+</span><span class="code-line line-number" line="4">  <span class="token literal-property property">devServer</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="5">    <span class="token keyword">static</span><span class="token operator">:</span> <span class="token string">"./dist"</span><span class="token punctuation">,</span>
+</span><span class="code-line line-number" line="6">    <span class="token literal-property property">port</span><span class="token operator">:</span> <span class="token number">8080</span><span class="token punctuation">,</span>
+</span><span class="code-line line-number" line="7">    <span class="token literal-property property">open</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 自動打開瀏覽器</span>
+</span><span class="code-line line-number" line="8">    <span class="token literal-property property">hot</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 啟用 HMR</span>
+</span><span class="code-line line-number" line="9">    <span class="token literal-property property">compress</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 啟用 gzip 壓縮</span>
+</span><span class="code-line line-number" line="10">  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+</span><span class="code-line line-number" line="11"><span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></code></pre>
+<p>在 package.json 中添加啟動命令：</p>
+<pre class="language-json"><code class="language-json code-highlight"><span class="code-line line-number" line="1"><span class="token property">"scripts"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="2">  <span class="token property">"start"</span><span class="token operator">:</span> <span class="token string">"webpack serve --mode development"</span><span class="token punctuation">,</span>
+</span><span class="code-line line-number" line="3">  <span class="token property">"build"</span><span class="token operator">:</span> <span class="token string">"webpack --mode production"</span>
+</span><span class="code-line line-number" line="4"><span class="token punctuation">}</span>
+</span></code></pre>
+<h2>實時重載 vs 熱模組替換</h2>
+<p><strong>實時重載 (Live Reloading)</strong>：
+當檔案變更時，整個頁面會重新載入。這是最基本的功能，不需要額外配置。</p>
+<p><strong>熱模組替換 (HMR)</strong>：
+只替換變更的模組，保留應用程式狀態。例如，修改 CSS 時只更新樣式，而不會重新整理整個頁面。</p>
+<p>啟用 HMR 需要在配置中設置 <code>hot: true</code>，並在入口檔案中添加：</p>
+<pre class="language-javascript"><code class="language-javascript code-highlight"><span class="code-line line-number" line="1"><span class="token keyword control-flow">if</span> <span class="token punctuation">(</span>module<span class="token punctuation">.</span><span class="token property-access">hot</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="2">  module<span class="token punctuation">.</span><span class="token property-access">hot</span><span class="token punctuation">.</span><span class="token method function property-access">accept</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="3"><span class="token punctuation">}</span>
+</span></code></pre>
+<h2>進階配置選項</h2>
+<h3>1. 代理 API 請求</h3>
+<p>解決跨域問題，將 API 請求代理到另一個服務器：</p>
+<pre class="language-javascript"><code class="language-javascript code-highlight"><span class="code-line line-number" line="1"><span class="token literal-property property">devServer</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="2">  <span class="token literal-property property">proxy</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="3">    <span class="token string-property property">'/api'</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="4">      <span class="token literal-property property">target</span><span class="token operator">:</span> <span class="token string">'http://localhost:3000'</span><span class="token punctuation">,</span>
+</span><span class="code-line line-number" line="5">      <span class="token literal-property property">pathRewrite</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token string-property property">'^/api'</span><span class="token operator">:</span> <span class="token string">''</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+</span><span class="code-line line-number" line="6">      <span class="token literal-property property">changeOrigin</span><span class="token operator">:</span> <span class="token boolean">true</span>
+</span><span class="code-line line-number" line="7">    <span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="8">  <span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="9"><span class="token punctuation">}</span>
+</span></code></pre>
+<h3>2. 設置 HTTPS</h3>
+<p>為本地開發環境啟用 HTTPS：</p>
+<pre class="language-javascript"><code class="language-javascript code-highlight"><span class="code-line line-number" line="1"><span class="token literal-property property">devServer</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="2">  <span class="token literal-property property">https</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="3"><span class="token punctuation">}</span>
+</span></code></pre>
+<p>如果需要自定義證書：</p>
+<pre class="language-javascript"><code class="language-javascript code-highlight"><span class="code-line line-number" line="1"><span class="token keyword">const</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'fs'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="2"><span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'path'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="3">
+</span><span class="code-line line-number" line="4"><span class="token literal-property property">devServer</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="5">  <span class="token literal-property property">https</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="6">    <span class="token literal-property property">key</span><span class="token operator">:</span> fs<span class="token punctuation">.</span><span class="token method function property-access">readFileSync</span><span class="token punctuation">(</span>path<span class="token punctuation">.</span><span class="token method function property-access">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'cert/server.key'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+</span><span class="code-line line-number" line="7">    <span class="token literal-property property">cert</span><span class="token operator">:</span> fs<span class="token punctuation">.</span><span class="token method function property-access">readFileSync</span><span class="token punctuation">(</span>path<span class="token punctuation">.</span><span class="token method function property-access">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'cert/server.crt'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+</span><span class="code-line line-number" line="8">    <span class="token literal-property property">ca</span><span class="token operator">:</span> fs<span class="token punctuation">.</span><span class="token method function property-access">readFileSync</span><span class="token punctuation">(</span>path<span class="token punctuation">.</span><span class="token method function property-access">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'cert/ca.pem'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+</span><span class="code-line line-number" line="9">  <span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="10"><span class="token punctuation">}</span>
+</span></code></pre>
+<h3>3. 設置 History API Fallback</h3>
+<p>對於單頁應用 (SPA)，配置歷史記錄 API 後備：</p>
+<pre class="language-javascript"><code class="language-javascript code-highlight"><span class="code-line line-number" line="1"><span class="token literal-property property">devServer</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="2">  <span class="token literal-property property">historyApiFallback</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="3"><span class="token punctuation">}</span>
+</span></code></pre>
+<p>更複雜的重寫規則：</p>
+<pre class="language-javascript"><code class="language-javascript code-highlight"><span class="code-line line-number" line="1"><span class="token literal-property property">devServer</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="2">  <span class="token literal-property property">historyApiFallback</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="3">    <span class="token literal-property property">rewrites</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+</span><span class="code-line line-number" line="4">      <span class="token punctuation">{</span> <span class="token keyword module">from</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex"><span class="token anchor function">^</span><span class="token escape">\/</span><span class="token anchor function">$</span></span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span> <span class="token literal-property property">to</span><span class="token operator">:</span> <span class="token string">"/index.html"</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+</span><span class="code-line line-number" line="5">      <span class="token punctuation">{</span> <span class="token keyword module">from</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex"><span class="token anchor function">^</span><span class="token escape">\/</span>subpage</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span> <span class="token literal-property property">to</span><span class="token operator">:</span> <span class="token string">"/subpage.html"</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+</span><span class="code-line line-number" line="6">      <span class="token punctuation">{</span> <span class="token keyword module">from</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex"><span class="token char-set class-name">.</span></span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span> <span class="token literal-property property">to</span><span class="token operator">:</span> <span class="token string">"/404.html"</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+</span><span class="code-line line-number" line="7">    <span class="token punctuation">]</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="8">  <span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="9"><span class="token punctuation">}</span>
+</span></code></pre>
+<h2>使用中的技巧與心得</h2>
+<p>在我使用 Webpack Dev Server 的過程中，有一些技巧和心得可以分享：</p>
+<ol>
+<li><strong>合理配置 watchOptions</strong>：在大型專案中，可以通過 <code>watchOptions</code> 配置來優化文件監視性能</li>
+</ol>
+<pre class="language-javascript"><code class="language-javascript code-highlight"><span class="code-line line-number" line="1"><span class="token literal-property property">devServer</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="2">  <span class="token literal-property property">watchOptions</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="3">    <span class="token literal-property property">poll</span><span class="token operator">:</span> <span class="token number">1000</span><span class="token punctuation">,</span> <span class="token comment">// 每秒檢查一次變動</span>
+</span><span class="code-line line-number" line="4">    <span class="token literal-property property">ignored</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">node_modules</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span> <span class="token comment">// 忽略 node_modules</span>
+</span><span class="code-line line-number" line="5">    <span class="token literal-property property">aggregateTimeout</span><span class="token operator">:</span> <span class="token number">300</span> <span class="token comment">// 等待 300ms 再執行，避免頻繁重建</span>
+</span><span class="code-line line-number" line="6">  <span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="7"><span class="token punctuation">}</span>
+</span></code></pre>
+<ol start="2">
+<li><strong>利用 overlay 顯示錯誤</strong>：在瀏覽器中直接顯示編譯錯誤</li>
+</ol>
+<pre class="language-javascript"><code class="language-javascript code-highlight"><span class="code-line line-number" line="1"><span class="token literal-property property">devServer</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="2">  <span class="token literal-property property">client</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="3">    <span class="token literal-property property">overlay</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="4">  <span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="5"><span class="token punctuation">}</span>
+</span></code></pre>
+<ol start="3">
+<li><strong>結合 source map</strong>：開發環境使用適當的 source map 便於調試</li>
+</ol>
+<pre class="language-javascript"><code class="language-javascript code-highlight"><span class="code-line line-number" line="1"><span class="token literal-property property">devtool</span><span class="token operator">:</span> <span class="token string">"eval-source-map"</span><span class="token punctuation">;</span> <span class="token comment">// 開發環境推薦</span>
+</span></code></pre>
+<h2>心得總結</h2>
+<p>Webpack Dev Server 極大地改善了我的前端開發工作流程。在我學習和使用 Webpack 的過程中，Dev Server 是最能直接感受到提升的部分。熱模組替換功能特別有用，它讓我可以即時看到修改的效果，同時保留應用程式的狀態，節省了大量測試時間。</p>
+<p>對於初學者，我建議從基本配置開始，理解實時重載和熱模組替換的區別。隨著專案的複雜度增加，可以逐步添加代理、HTTPS 等進階功能。</p>
+<p>合理配置 Webpack Dev Server 是提高前端開發效率的關鍵因素之一。這個工具的學習成本較低，但帶來的收益卻非常顯著，絕對值得每一位前端開發者投入時間學習。</p>7:["$","div",null,{"className":"container mx-auto py-8 px-4 md:px-6 max-w-4xl","children":[["$","div",null,{"className":"mb-8","children":["$","$L6",null,{"href":"/","className":"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left mr-2 h-4 w-4","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}]," 返回首頁"]}]}],["$","article",null,{"className":"prose dark:prose-invert max-w-none","children":[["$","h1",null,{"className":"text-3xl md:text-4xl font-bold mb-4","children":"Webpack Dev Server：提升開發效率的利器"}],["$","div",null,{"className":"flex items-center gap-4 text-muted-foreground mb-8","children":[["$","div",null,{"className":"flex items-center gap-1","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-calendar h-4 w-4","aria-hidden":"true","children":[["$","path","1cmpym",{"d":"M8 2v4"}],["$","path","4m81vk",{"d":"M16 2v4"}],["$","rect","1hopcy",{"width":"18","height":"18","x":"3","y":"4","rx":"2"}],["$","path","8toen8",{"d":"M3 10h18"}],"$undefined"]}],["$","span",null,{"children":"2023/5/29"}]]}],["$","div",null,{"className":"flex items-center gap-1","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-tag h-4 w-4","aria-hidden":"true","children":[["$","path","vktsd0",{"d":"M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"}],["$","circle","kqv944",{"cx":"7.5","cy":"7.5","r":".5","fill":"currentColor"}],"$undefined"]}],["$","$L6",null,{"href":"/category/webpack","className":"hover:text-primary transition-colors capitalize","children":"webpack"}]]}]]}],["$","div",null,{"className":"leading-relaxed","children":["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$15"}}]}]]}]]}]
 10:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
 b:null
 14:{"metadata":[["$","link","0",{"rel":"icon","href":"/blog-next/favicon.ico","type":"image/x-icon","sizes":"16x16"}]],"error":null,"digest":"$undefined"}
