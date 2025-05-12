@@ -4,13 +4,12 @@ import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
 import { getPostBySlug, getAllPostSlugs } from "@/lib/posts";
 
-// 為靜態站點生成添加必要的generateStaticParams函數
+// 為靜態站點生成添加必要的generateStaticParams函數 DON'T REMOVE!!!
 export async function generateStaticParams() {
   const slugs = await getAllPostSlugs();
   return slugs;
 }
 
-// 使用簡單的內聯類型，讓TypeScript自動推導
 export default async function PostPage({
   params,
 }: {
@@ -54,7 +53,6 @@ export default async function PostPage({
         </div>
 
         <div className="leading-relaxed">
-          {/* 使用 dangerouslySetInnerHTML 渲染 Markdown 轉換後的 HTML */}
           <div
             dangerouslySetInnerHTML={{
               __html: post.contentHtml || "",

@@ -5,13 +5,12 @@ import { buttonVariants } from "@/components/ui/button";
 import { FeaturedPostCard } from "@/components/FeaturedPostCard";
 import { getPostsByCategory, getAllCategorySlugs } from "@/lib/posts";
 
-// 為靜態站點生成添加必要的generateStaticParams函數
+//  DON'T REMOVE!!! 為靜態站點生成添加必要的generateStaticParams函數
 export async function generateStaticParams() {
   const slugs = await getAllCategorySlugs();
   return slugs;
 }
 
-// 使用符合 Next.js 15 的頁面組件定義方式
 export default async function CategoryPage(props: {
   params: Promise<{ slug: string }>;
 }) {

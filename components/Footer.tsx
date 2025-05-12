@@ -57,7 +57,7 @@ export function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="https://github.com"
+                  href="https://github.com/supermanko1102"
                   target="_blank"
                   rel="noreferrer"
                   className="flex items-center gap-2 text-muted-foreground text-sm hover:text-primary transition-colors"
