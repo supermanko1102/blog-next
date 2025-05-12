@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import { markdownToHtml } from "./markdown";
 
 export interface Post {
   title: string;
@@ -9,6 +10,7 @@ export interface Post {
   category: string;
   slug: string;
   content?: string;
+  contentHtml?: string;
 }
 
 export interface Category {
@@ -113,6 +115,9 @@ export async function getPostBySlug(slugArray: string[]): Promise<Post | null> {
     const fileContents = fs.readFileSync(fullPath, "utf8");
     const { data, content } = matter(fileContents);
 
+    // 將 Markdown 內容轉換為 HTML
+    const contentHtml = await markdownToHtml(content || "");
+
     return {
       title: data.title || "無標題",
       date: data.date
@@ -121,6 +126,7 @@ export async function getPostBySlug(slugArray: string[]): Promise<Post | null> {
       excerpt: data.excerpt || "",
       category,
       content,
+      contentHtml,
       slug: `${category}/${slug}`,
     };
   } catch (error) {

@@ -54,8 +54,12 @@ export default async function PostPage({
         </div>
 
         <div className="leading-relaxed">
-          {/* 這裡需要使用Markdown渲染器顯示內容 */}
-          <div className="whitespace-pre-wrap">{post.content}</div>
+          {/* 使用 dangerouslySetInnerHTML 渲染 Markdown 轉換後的 HTML */}
+          <div
+            dangerouslySetInnerHTML={{
+              __html: post.contentHtml || "",
+            }}
+          />
         </div>
       </article>
     </div>
