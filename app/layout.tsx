@@ -1,4 +1,5 @@
 import "./globals.css";
+import "./prism.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { ThemeProvider } from "next-themes";
