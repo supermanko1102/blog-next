@@ -118,3 +118,17 @@
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes bounce-horizontal {
+  0%,
+  100% {
+    left: 0;
+  }
+  50% {
+    left: calc(100% - 2rem);
+  }
+}
+
+.animate-bounce-horizontal {
+  animation: bounce-horizontal 2s infinite;
+}
