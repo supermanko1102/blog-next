@@ -1,0 +1,273 @@
+1:"$Sreact.fragment"
+2:I[1362,["747","static/chunks/747-75ee5d190a01c731.js","598","static/chunks/598-d6b444c04c4bc02e.js","177","static/chunks/app/layout-f9070ac58b9f596a.js"],"ThemeProvider"]
+3:I[2243,["747","static/chunks/747-75ee5d190a01c731.js","598","static/chunks/598-d6b444c04c4bc02e.js","177","static/chunks/app/layout-f9070ac58b9f596a.js"],"Header"]
+4:I[7555,[],""]
+5:I[1295,[],""]
+6:I[6874,["747","static/chunks/747-75ee5d190a01c731.js","598","static/chunks/598-d6b444c04c4bc02e.js","530","static/chunks/app/posts/page-c39defde20d828ac.js"],""]
+8:I[9665,[],"MetadataBoundary"]
+a:I[9665,[],"OutletBoundary"]
+d:I[4911,[],"AsyncMetadataOutlet"]
+f:I[9665,[],"ViewportBoundary"]
+11:I[6614,[],""]
+:HL["/blog-next/_next/static/css/255aa8a21c99457f.css","style"]
+0:{"P":null,"b":"BmHkKRLArxW_ESfvYHuhw","p":"/blog-next","c":["","posts","Typescript","type_interface",""],"i":false,"f":[[["",{"children":["posts",{"children":[["slug","Typescript/type_interface","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/blog-next/_next/static/css/255aa8a21c99457f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-TW","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","title",null,{"children":"前端技術學習筆記"}],["$","meta",null,{"name":"description","content":"記錄前端技術學習過程中的心得與技巧，包含 JavaScript、React、Webpack 等主題"}],["$","link",null,{"rel":"icon","href":"/favicon.ico"}]]}],["$","body",null,{"className":"min-h-screen flex flex-col","children":["$","$L2",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"disableTransitionOnChange":true,"children":[["$","$L3",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"flex flex-col items-center justify-center min-h-[70vh] text-center px-4","children":["$","div",null,{"className":"space-y-5","children":[["$","h1",null,{"className":"text-9xl font-extrabold tracking-widest bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500 animate-pulse","children":"404"}],["$","h2",null,{"className":"text-3xl md:text-4xl font-bold mt-8 mb-4","children":"糟糕！頁面迷路了"}],["$","p",null,{"className":"text-muted-foreground text-lg mb-8 max-w-md mx-auto","children":"看起來你正在尋找的頁面已經消失在數位宇宙中，或者它從未存在過。"}],["$","div",null,{"className":"mt-8","children":["$","$L6",null,{"href":"/","className":"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 h-10 rounded-md px-6 has-[>svg]:px-4 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white","children":"返回首頁"}]}],["$","div",null,{"className":"mt-16 max-w-md mx-auto","children":["$","div",null,{"className":"w-full h-24 border-4 border-dashed border-gray-300 rounded-lg flex items-center justify-center relative overflow-hidden","children":[["$","div",null,{"className":"absolute w-8 h-8 bg-purple-500 rounded-full left-0 animate-bounce-horizontal"}],["$","p",null,{"className":"text-muted-foreground","children":"正在搜尋您的頁面..."}]]}]}]]}]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"border-t bg-background","children":["$","div",null,{"className":"container py-8 px-4 md:px-6","children":[["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-4 gap-8","children":[["$","div",null,{"className":"col-span-1 md:col-span-2","children":[["$","$L6",null,{"href":"/","className":"text-xl font-bold mb-4 block","children":"前端學習筆記"}],["$","p",null,{"className":"text-muted-foreground text-sm max-w-xs","children":"記錄前端技術學習過程中的心得與技巧，包含 JavaScript、React、Webpack 等主題"}]]}],["$","div",null,{"children":[["$","h3",null,{"className":"font-medium mb-4","children":"導航"}],["$","ul",null,{"className":"space-y-2","children":[["$","li",null,{"children":["$","$L6",null,{"href":"/","className":"text-muted-foreground text-sm hover:text-primary transition-colors","children":"首頁"}]}],["$","li",null,{"children":["$","$L6",null,{"href":"/posts","className":"text-muted-foreground text-sm hover:text-primary transition-colors","children":"文章"}]}],["$","li",null,{"children":["$","$L6",null,{"href":"/categories","className":"text-muted-foreground text-sm hover:text-primary transition-colors","children":"分類"}]}],["$","li",null,{"children":["$","$L6",null,{"href":"/about","className":"text-muted-foreground text-sm hover:text-primary transition-colors","children":"關於"}]}]]}]]}],["$","div",null,{"children":[["$","h3",null,{"className":"font-medium mb-4","children":"社交媒體"}],["$","ul",null,{"className":"space-y-2","children":["$","li",null,{"children":["$","$L6",null,{"href":"https://github.com/supermanko1102","target":"_blank","rel":"noreferrer","className":"flex items-center gap-2 text-muted-foreground text-sm hover:text-primary transition-colors","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-github h-4 w-4","aria-hidden":"true","children":[["$","path","tonef",{"d":"M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"}],["$","path","9comsn",{"d":"M9 18c-4.51 2-5-2-7-2"}],"$undefined"]}],["$","span",null,{"children":"GitHub"}]]}]}]}]]}]]}],["$","div",null,{"className":"mt-8 pt-8 border-t text-center","children":["$","p",null,{"className":"text-sm text-muted-foreground","children":["© ",2025," 前端學習筆記. 版權所有."]}]}]]}]}]]}]}]]}]]}],{"children":["posts",["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","Typescript/type_interface","c"],["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L7",["$","$L8",null,{"children":"$L9"}],null,["$","$La",null,{"children":["$Lb","$Lc",["$","$Ld",null,{"promise":"$@e"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","mXLO-6ljM5EsnRHPhxcUg",{"children":[["$","$Lf",null,{"children":"$L10"}],null]}],null]}],false]],"m":"$undefined","G":["$11","$undefined"],"s":false,"S":true}
+12:"$Sreact.suspense"
+13:I[4911,[],"AsyncMetadata"]
+9:["$","$12",null,{"fallback":null,"children":["$","$L13",null,{"promise":"$@14"}]}]
+c:null
+15:T968d,<h1>TypeScript 中的 type 與 interface</h1>
+<p>TypeScript 提供了兩種主要的方式來定義類型：<code>type</code> 和 <code>interface</code>。這兩種機制雖然有許多相似之處，但在某些情況下卻有著關鍵的差異。本文將由淺入深地探討這兩種類型定義方式的用法、差異和最佳實踐。</p>
+<h2>基本概念</h2>
+<h3>type（類型別名）</h3>
+<p><code>type</code> 關鍵字用於創建一個類型別名，可以為任何類型指定一個名稱：</p>
+<pre class="language-typescript"><code class="language-typescript code-highlight"><span class="code-line line-number" line="1"><span class="token comment">// 基本類型別名</span>
+</span><span class="code-line line-number" line="2"><span class="token keyword">type</span> <span class="token class-name">Name</span> <span class="token operator">=</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="3"><span class="token keyword">type</span> <span class="token class-name">Age</span> <span class="token operator">=</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="4"><span class="token keyword">type</span> <span class="token class-name">IsActive</span> <span class="token operator">=</span> <span class="token builtin">boolean</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="5">
+</span><span class="code-line line-number" line="6"><span class="token comment">// 使用類型別名</span>
+</span><span class="code-line line-number" line="7"><span class="token keyword">const</span> userName<span class="token operator">:</span> Name <span class="token operator">=</span> <span class="token string">"張三"</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="8"><span class="token keyword">const</span> userAge<span class="token operator">:</span> Age <span class="token operator">=</span> <span class="token number">25</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="9"><span class="token keyword">const</span> isUserActive<span class="token operator">:</span> IsActive <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+</span></code></pre>
+<h3>interface（介面）</h3>
+<p><code>interface</code> 用於定義物件的結構：</p>
+<pre class="language-typescript"><code class="language-typescript code-highlight"><span class="code-line line-number" line="1"><span class="token comment">// 基本介面</span>
+</span><span class="code-line line-number" line="2"><span class="token keyword">interface</span> <span class="token class-name">User</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="3">  name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="4">  age<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="5">  isActive<span class="token operator">:</span> <span class="token builtin">boolean</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="6"><span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="7">
+</span><span class="code-line line-number" line="8"><span class="token comment">// 使用介面</span>
+</span><span class="code-line line-number" line="9"><span class="token keyword">const</span> user<span class="token operator">:</span> User <span class="token operator">=</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="10">  name<span class="token operator">:</span> <span class="token string">"張三"</span><span class="token punctuation">,</span>
+</span><span class="code-line line-number" line="11">  age<span class="token operator">:</span> <span class="token number">25</span><span class="token punctuation">,</span>
+</span><span class="code-line line-number" line="12">  isActive<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+</span><span class="code-line line-number" line="13"><span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></code></pre>
+<h2>主要相似點</h2>
+<h3>1. 描述物件結構</h3>
+<p>兩者都可以用來描述物件的結構：</p>
+<pre class="language-typescript"><code class="language-typescript code-highlight"><span class="code-line line-number" line="1"><span class="token comment">// 使用 type</span>
+</span><span class="code-line line-number" line="2"><span class="token keyword">type</span> <span class="token class-name">Person</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="3">  name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="4">  age<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="5"><span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="6">
+</span><span class="code-line line-number" line="7"><span class="token comment">// 使用 interface</span>
+</span><span class="code-line line-number" line="8"><span class="token class-name"><span class="token keyword">interface</span></span> Person <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="9">  name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="10">  age<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="11"><span class="token punctuation">}</span>
+</span></code></pre>
+<h3>2. 擴展已有類型</h3>
+<p>兩者都支持擴展已有的類型：</p>
+<pre class="language-typescript"><code class="language-typescript code-highlight"><span class="code-line line-number" line="1"><span class="token comment">// 使用 type 擴展</span>
+</span><span class="code-line line-number" line="2"><span class="token keyword">type</span> <span class="token class-name">Animal</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="3">  name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="4"><span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="5">
+</span><span class="code-line line-number" line="6"><span class="token keyword">type</span> <span class="token class-name">Dog</span> <span class="token operator">=</span> Animal <span class="token operator">&#x26;</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="7">  breed<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="8"><span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="9">
+</span><span class="code-line line-number" line="10"><span class="token comment">// 使用 interface 擴展</span>
+</span><span class="code-line line-number" line="11"><span class="token keyword">interface</span> <span class="token class-name">Animal</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="12">  name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="13"><span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="14">
+</span><span class="code-line line-number" line="15"><span class="token keyword">interface</span> <span class="token class-name">Dog</span> <span class="token keyword">extends</span> <span class="token class-name">Animal</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="16">  breed<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="17"><span class="token punctuation">}</span>
+</span></code></pre>
+<h3>3. 實現泛型</h3>
+<p>兩者都支持泛型：</p>
+<pre class="language-typescript"><code class="language-typescript code-highlight"><span class="code-line line-number" line="1"><span class="token comment">// 使用 type 的泛型</span>
+</span><span class="code-line line-number" line="2"><span class="token keyword">type</span> <span class="token class-name">Box<span class="token operator">&#x3C;</span><span class="token constant">T</span><span class="token operator">></span></span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="3">  value<span class="token operator">:</span> <span class="token constant">T</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="4"><span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="5">
+</span><span class="code-line line-number" line="6"><span class="token keyword">const</span> stringBox<span class="token operator">:</span> Box<span class="token operator">&#x3C;</span><span class="token builtin">string</span><span class="token operator">></span> <span class="token operator">=</span> <span class="token punctuation">{</span> value<span class="token operator">:</span> <span class="token string">"Hello"</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="7">
+</span><span class="code-line line-number" line="8"><span class="token comment">// 使用 interface 的泛型</span>
+</span><span class="code-line line-number" line="9"><span class="token keyword">interface</span> <span class="token class-name">Container<span class="token operator">&#x3C;</span><span class="token constant">T</span><span class="token operator">></span></span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="10">  value<span class="token operator">:</span> <span class="token constant">T</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="11"><span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="12">
+</span><span class="code-line line-number" line="13"><span class="token keyword">const</span> numberContainer<span class="token operator">:</span> Container<span class="token operator">&#x3C;</span><span class="token builtin">number</span><span class="token operator">></span> <span class="token operator">=</span> <span class="token punctuation">{</span> value<span class="token operator">:</span> <span class="token number">42</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></code></pre>
+<h2>主要差異</h2>
+<h3>1. 聯合類型</h3>
+<p><code>type</code> 可以直接定義聯合類型，但 <code>interface</code> 不可以：</p>
+<pre class="language-typescript"><code class="language-typescript code-highlight"><span class="code-line line-number" line="1"><span class="token comment">// type 可以是聯合類型</span>
+</span><span class="code-line line-number" line="2"><span class="token keyword">type</span> <span class="token class-name"><span class="token constant">ID</span></span> <span class="token operator">=</span> <span class="token builtin">string</span> <span class="token operator">|</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="3">
+</span><span class="code-line line-number" line="4"><span class="token comment">// 這無法用 interface 直接實現</span>
+</span></code></pre>
+<h3>2. 交叉類型</h3>
+<p><code>type</code> 使用 <code>&#x26;</code> 進行交叉，而 <code>interface</code> 使用 <code>extends</code>：</p>
+<pre class="language-typescript"><code class="language-typescript code-highlight"><span class="code-line line-number" line="1"><span class="token comment">// type 的交叉類型</span>
+</span><span class="code-line line-number" line="2"><span class="token keyword">type</span> <span class="token class-name">Employee</span> <span class="token operator">=</span> Person <span class="token operator">&#x26;</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="3">  employeeId<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="4"><span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="5">
+</span><span class="code-line line-number" line="6"><span class="token comment">// interface 的擴展</span>
+</span><span class="code-line line-number" line="7"><span class="token keyword">interface</span> <span class="token class-name">Manager</span> <span class="token keyword">extends</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="8">  managerId<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="9"><span class="token punctuation">}</span>
+</span></code></pre>
+<h3>3. 聲明合併</h3>
+<p><code>interface</code> 支援聲明合併，而 <code>type</code> 不支援：</p>
+<pre class="language-typescript"><code class="language-typescript code-highlight"><span class="code-line line-number" line="1"><span class="token comment">// interface 可以重複定義，會自動合併</span>
+</span><span class="code-line line-number" line="2"><span class="token keyword">interface</span> <span class="token class-name">User</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="3">  name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="4"><span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="5">
+</span><span class="code-line line-number" line="6"><span class="token keyword">interface</span> <span class="token class-name">User</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="7">  age<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="8"><span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="9">
+</span><span class="code-line line-number" line="10"><span class="token comment">// 等同於：</span>
+</span><span class="code-line line-number" line="11"><span class="token comment">// interface User {</span>
+</span><span class="code-line line-number" line="12"><span class="token comment">//   name: string;</span>
+</span><span class="code-line line-number" line="13"><span class="token comment">//   age: number;</span>
+</span><span class="code-line line-number" line="14"><span class="token comment">// }</span>
+</span><span class="code-line line-number" line="15">
+</span><span class="code-line line-number" line="16"><span class="token comment">// type 不能重複定義</span>
+</span><span class="code-line line-number" line="17"><span class="token keyword">type</span> <span class="token class-name">User</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="18">  name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="19"><span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="20">
+</span><span class="code-line line-number" line="21"><span class="token comment">// 錯誤：標識符 'User' 重複定義</span>
+</span><span class="code-line line-number" line="22"><span class="token comment">// type User = {</span>
+</span><span class="code-line line-number" line="23"><span class="token comment">//   age: number;</span>
+</span><span class="code-line line-number" line="24"><span class="token comment">// };</span>
+</span></code></pre>
+<h3>4. 原始值類型</h3>
+<p><code>type</code> 可以使用原始值作為類型，但 <code>interface</code> 不行：</p>
+<pre class="language-typescript"><code class="language-typescript code-highlight"><span class="code-line line-number" line="1"><span class="token comment">// type 可以使用字面量類型</span>
+</span><span class="code-line line-number" line="2"><span class="token keyword">type</span> <span class="token class-name">Direction</span> <span class="token operator">=</span> <span class="token string">"North"</span> <span class="token operator">|</span> <span class="token string">"South"</span> <span class="token operator">|</span> <span class="token string">"East"</span> <span class="token operator">|</span> <span class="token string">"West"</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="3"><span class="token keyword">type</span> <span class="token class-name">OneToFive</span> <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">|</span> <span class="token number">2</span> <span class="token operator">|</span> <span class="token number">3</span> <span class="token operator">|</span> <span class="token number">4</span> <span class="token operator">|</span> <span class="token number">5</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="4">
+</span><span class="code-line line-number" line="5"><span class="token comment">// interface 不能這樣做</span>
+</span></code></pre>
+<h3>5. 元組和數組</h3>
+<p><code>type</code> 可以更容易地定義元組和特定數組類型：</p>
+<pre class="language-typescript"><code class="language-typescript code-highlight"><span class="code-line line-number" line="1"><span class="token comment">// type 定義元組</span>
+</span><span class="code-line line-number" line="2"><span class="token keyword">type</span> <span class="token class-name">Point</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token builtin">number</span><span class="token punctuation">,</span> <span class="token builtin">number</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="3"><span class="token keyword">type</span> <span class="token class-name"><span class="token constant">RGB</span></span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token builtin">number</span><span class="token punctuation">,</span> <span class="token builtin">number</span><span class="token punctuation">,</span> <span class="token builtin">number</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="4">
+</span><span class="code-line line-number" line="5"><span class="token comment">// interface 需要間接定義</span>
+</span><span class="code-line line-number" line="6"><span class="token keyword">interface</span> <span class="token class-name">PointInterface</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="7">  <span class="token number">0</span><span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="8">  <span class="token number">1</span><span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="9">  length<span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="10"><span class="token punctuation">}</span>
+</span></code></pre>
+<h2>進階用法</h2>
+<h3>條件類型（僅適用於 type）</h3>
+<p><code>type</code> 可以使用條件類型（三元運算符）：</p>
+<pre class="language-typescript"><code class="language-typescript code-highlight"><span class="code-line line-number" line="1"><span class="token keyword">type</span> <span class="token class-name">IsArray<span class="token operator">&#x3C;</span><span class="token constant">T</span><span class="token operator">></span></span> <span class="token operator">=</span> <span class="token constant">T</span> <span class="token keyword">extends</span> <span class="token class-name"><span class="token builtin">any</span></span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">?</span> <span class="token boolean">true</span> <span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="2">
+</span><span class="code-line line-number" line="3"><span class="token keyword">type</span> <span class="token class-name">CheckString</span> <span class="token operator">=</span> IsArray<span class="token operator">&#x3C;</span><span class="token builtin">string</span><span class="token operator">></span><span class="token punctuation">;</span> <span class="token comment">// false</span>
+</span><span class="code-line line-number" line="4"><span class="token keyword">type</span> <span class="token class-name">CheckArray</span> <span class="token operator">=</span> IsArray<span class="token operator">&#x3C;</span><span class="token builtin">number</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token operator">></span><span class="token punctuation">;</span> <span class="token comment">// true</span>
+</span></code></pre>
+<h3>映射類型（主要用於 type）</h3>
+<pre class="language-typescript"><code class="language-typescript code-highlight"><span class="code-line line-number" line="1"><span class="token keyword">type</span> <span class="token class-name">Readonly<span class="token operator">&#x3C;</span><span class="token constant">T</span><span class="token operator">></span></span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="2">  <span class="token keyword">readonly</span> <span class="token punctuation">[</span><span class="token constant">P</span> <span class="token keyword">in</span> <span class="token keyword">keyof</span> <span class="token constant">T</span><span class="token punctuation">]</span><span class="token operator">:</span> <span class="token constant">T</span><span class="token punctuation">[</span><span class="token constant">P</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="3"><span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="4">
+</span><span class="code-line line-number" line="5"><span class="token keyword">type</span> <span class="token class-name">Optional<span class="token operator">&#x3C;</span><span class="token constant">T</span><span class="token operator">></span></span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="6">  <span class="token punctuation">[</span><span class="token constant">P</span> <span class="token keyword">in</span> <span class="token keyword">keyof</span> <span class="token constant">T</span><span class="token punctuation">]</span><span class="token operator">?</span><span class="token operator">:</span> <span class="token constant">T</span><span class="token punctuation">[</span><span class="token constant">P</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="7"><span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="8">
+</span><span class="code-line line-number" line="9"><span class="token keyword">interface</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="10">  name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="11">  age<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="12"><span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="13">
+</span><span class="code-line line-number" line="14"><span class="token comment">// 所有屬性變為只讀</span>
+</span><span class="code-line line-number" line="15"><span class="token keyword">type</span> <span class="token class-name">ReadonlyPerson</span> <span class="token operator">=</span> Readonly<span class="token operator">&#x3C;</span>Person<span class="token operator">></span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="16">
+</span><span class="code-line line-number" line="17"><span class="token comment">// 所有屬性變為可選</span>
+</span><span class="code-line line-number" line="18"><span class="token keyword">type</span> <span class="token class-name">OptionalPerson</span> <span class="token operator">=</span> Optional<span class="token operator">&#x3C;</span>Person<span class="token operator">></span><span class="token punctuation">;</span>
+</span></code></pre>
+<h3>索引訪問類型</h3>
+<pre class="language-typescript"><code class="language-typescript code-highlight"><span class="code-line line-number" line="1"><span class="token keyword">interface</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="2">  name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="3">  age<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="4">  address<span class="token operator">:</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="5">    city<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="6">    country<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="7">  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="8"><span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="9">
+</span><span class="code-line line-number" line="10"><span class="token keyword">type</span> <span class="token class-name">City</span> <span class="token operator">=</span> Person<span class="token punctuation">[</span><span class="token string">"address"</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">"city"</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// string</span>
+</span></code></pre>
+<h3>實用工具類型</h3>
+<p>TypeScript 內建了許多實用的工具類型，主要基於 <code>type</code>：</p>
+<pre class="language-typescript"><code class="language-typescript code-highlight"><span class="code-line line-number" line="1"><span class="token keyword">interface</span> <span class="token class-name">Todo</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="2">  title<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="3">  description<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="4">  completed<span class="token operator">:</span> <span class="token builtin">boolean</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="5"><span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="6">
+</span><span class="code-line line-number" line="7"><span class="token comment">// 將所有屬性變為可選</span>
+</span><span class="code-line line-number" line="8"><span class="token keyword">type</span> <span class="token class-name">PartialTodo</span> <span class="token operator">=</span> Partial<span class="token operator">&#x3C;</span>Todo<span class="token operator">></span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="9">
+</span><span class="code-line line-number" line="10"><span class="token comment">// 將所有屬性變為必需</span>
+</span><span class="code-line line-number" line="11"><span class="token keyword">type</span> <span class="token class-name">RequiredTodo</span> <span class="token operator">=</span> Required<span class="token operator">&#x3C;</span>Todo<span class="token operator">></span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="12">
+</span><span class="code-line line-number" line="13"><span class="token comment">// 將所有屬性變為只讀</span>
+</span><span class="code-line line-number" line="14"><span class="token keyword">type</span> <span class="token class-name">ReadonlyTodo</span> <span class="token operator">=</span> Readonly<span class="token operator">&#x3C;</span>Todo<span class="token operator">></span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="15">
+</span><span class="code-line line-number" line="16"><span class="token comment">// 從 Todo 中選擇部分屬性</span>
+</span><span class="code-line line-number" line="17"><span class="token keyword">type</span> <span class="token class-name">TodoPreview</span> <span class="token operator">=</span> Pick<span class="token operator">&#x3C;</span>Todo<span class="token punctuation">,</span> <span class="token string">"title"</span> <span class="token operator">|</span> <span class="token string">"completed"</span><span class="token operator">></span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="18">
+</span><span class="code-line line-number" line="19"><span class="token comment">// 從 Todo 中排除部分屬性</span>
+</span><span class="code-line line-number" line="20"><span class="token keyword">type</span> <span class="token class-name">TodoInfo</span> <span class="token operator">=</span> Omit<span class="token operator">&#x3C;</span>Todo<span class="token punctuation">,</span> <span class="token string">"completed"</span><span class="token operator">></span><span class="token punctuation">;</span>
+</span></code></pre>
+<h2>最佳實踐與選擇指南</h2>
+<h3>何時使用 interface</h3>
+<ol>
+<li><strong>定義物件的公共 API</strong>：當你要定義類、函數庫或第三方 API 的形狀時</li>
+<li><strong>需要聲明合併</strong>：當你需要在多個地方擴展同一個介面時</li>
+<li><strong>實現 OOP 設計模式</strong>：尤其是在需要類實現介面的情況下</li>
+</ol>
+<pre class="language-typescript"><code class="language-typescript code-highlight"><span class="code-line line-number" line="1"><span class="token keyword">interface</span> <span class="token class-name">Repository<span class="token operator">&#x3C;</span><span class="token constant">T</span><span class="token operator">></span></span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="2">  <span class="token function">getAll</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token constant">T</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="3">  <span class="token function">getById</span><span class="token punctuation">(</span>id<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token constant">T</span> <span class="token operator">|</span> <span class="token keyword">undefined</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="4">  <span class="token function">create</span><span class="token punctuation">(</span>item<span class="token operator">:</span> <span class="token constant">T</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token keyword">void</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="5"><span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="6">
+</span><span class="code-line line-number" line="7"><span class="token keyword">class</span> <span class="token class-name">UserRepository</span> <span class="token keyword">implements</span> <span class="token class-name">Repository<span class="token operator">&#x3C;</span>User<span class="token operator">></span></span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="8">  <span class="token comment">// 實現所有方法...</span>
+</span><span class="code-line line-number" line="9"><span class="token punctuation">}</span>
+</span></code></pre>
+<h3>何時使用 type</h3>
+<ol>
+<li><strong>聯合類型或交叉類型</strong>：需要組合多種類型時</li>
+<li><strong>基本類型的別名</strong>：為基本類型創建語義化名稱時</li>
+<li><strong>元組</strong>：需要固定長度和特定位置類型的數組時</li>
+<li><strong>複雜的類型轉換和操作</strong>：使用條件類型、映射類型等</li>
+<li><strong>不希望類型被擴展</strong>：希望類型定義固定不變時</li>
+</ol>
+<pre class="language-typescript"><code class="language-typescript code-highlight"><span class="code-line line-number" line="1"><span class="token comment">// 聯合類型</span>
+</span><span class="code-line line-number" line="2"><span class="token keyword">type</span> <span class="token class-name">Result<span class="token operator">&#x3C;</span><span class="token constant">T</span><span class="token operator">></span></span> <span class="token operator">=</span> <span class="token constant">T</span> <span class="token operator">|</span> Error<span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="3">
+</span><span class="code-line line-number" line="4"><span class="token comment">// 複雜類型轉換</span>
+</span><span class="code-line line-number" line="5"><span class="token keyword">type</span> <span class="token class-name">ExtractProps<span class="token operator">&#x3C;</span><span class="token constant">T</span><span class="token operator">></span></span> <span class="token operator">=</span> <span class="token constant">T</span> <span class="token keyword">extends</span> <span class="token punctuation">{</span> props<span class="token operator">:</span> <span class="token keyword">infer</span> <span class="token constant">P</span> <span class="token punctuation">}</span> <span class="token operator">?</span> <span class="token constant">P</span> <span class="token operator">:</span> <span class="token builtin">never</span><span class="token punctuation">;</span>
+</span></code></pre>
+<h2>TypeScript 團隊的建議</h2>
+<p>TypeScript 團隊的官方建議是：</p>
+<blockquote>
+<p>從 TypeScript 2.1 開始，interface 和 type 的功能差距已經大幅縮小。在大多數情況下，你可以自由選擇使用哪一個。一個常見的經驗法則是當你需要使用 interface 獨有的功能（如聲明合併）時使用 interface；當你需要使用 type 獨有的功能（如聯合類型、映射類型）時使用 type。</p>
+</blockquote>
+<h2>結論</h2>
+<p><code>type</code> 和 <code>interface</code> 各有其優勢和適用場景。理解它們的差異可以幫助你在 TypeScript 中寫出更清晰、更強大的類型定義。在實際項目中，兩者通常會一起使用，根據具體需求選擇最合適的工具。</p>
+<p>總的來說，選擇 <code>type</code> 還是 <code>interface</code> 取決於你的具體需求，而不是某一個總是優於另一個。隨著你對 TypeScript 的理解加深，你會更加自然地知道在什麼情況下使用哪一個。</p>7:["$","div",null,{"className":"container mx-auto py-8 px-4 md:px-6 max-w-4xl","children":[["$","div",null,{"className":"mb-8","children":["$","$L6",null,{"href":"/","className":"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left mr-2 h-4 w-4","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}]," 返回首頁"]}]}],["$","article",null,{"className":"prose dark:prose-invert max-w-none","children":[["$","h1",null,{"className":"text-3xl md:text-4xl font-bold mb-4","children":"type跟interface"}],["$","div",null,{"className":"flex items-center gap-4 text-muted-foreground mb-8","children":[["$","div",null,{"className":"flex items-center gap-1","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-calendar h-4 w-4","aria-hidden":"true","children":[["$","path","1cmpym",{"d":"M8 2v4"}],["$","path","4m81vk",{"d":"M16 2v4"}],["$","rect","1hopcy",{"width":"18","height":"18","x":"3","y":"4","rx":"2"}],["$","path","8toen8",{"d":"M3 10h18"}],"$undefined"]}],["$","span",null,{"children":"2025/4/29"}]]}],["$","div",null,{"className":"flex items-center gap-1","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-tag h-4 w-4","aria-hidden":"true","children":[["$","path","vktsd0",{"d":"M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"}],["$","circle","kqv944",{"cx":"7.5","cy":"7.5","r":".5","fill":"currentColor"}],"$undefined"]}],["$","$L6",null,{"href":"/category/Typescript","className":"hover:text-primary transition-colors capitalize","children":"Typescript"}]]}]]}],["$","div",null,{"className":"leading-relaxed","children":["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$15"}}]}]]}]]}]
+10:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+b:null
+14:{"metadata":[["$","link","0",{"rel":"icon","href":"/blog-next/favicon.ico","type":"image/x-icon","sizes":"16x16"}]],"error":null,"digest":"$undefined"}
+e:{"metadata":"$14:metadata","error":null,"digest":"$undefined"}
