@@ -11,20 +11,18 @@ export async function generateStaticParams() {
   return slugs;
 }
 
-// 在Next.js 15中，我們讓類型自動推導而不是顯式定義
-export default async function CategoryPage({
-  params,
-}: {
-  params: { slug: string };
+// 使用符合 Next.js 15 的頁面組件定義方式
+export default async function CategoryPage(props: {
+  params: Promise<{ slug: string }>;
 }) {
-  const posts = await getPostsByCategory(params.slug);
+  const { slug } = await props.params;
+  const posts = await getPostsByCategory(slug);
 
   if (!posts) {
     notFound();
   }
 
-  const categoryName =
-    params.slug.charAt(0).toUpperCase() + params.slug.slice(1);
+  const categoryName = slug.charAt(0).toUpperCase() + slug.slice(1);
 
   return (
     <div className="container mx-auto py-8 px-4 md:px-6">
