@@ -36,10 +36,10 @@ export default async function CategoryPage({
   );
 
   return (
-    <div className="container mx-auto py-8 md:px-0">
-      <div className="flex flex-col md:flex-row">
-        {/* 側邊欄 - 在移動端隱藏 */}
-        <div className="hidden md:block">
+    <div className="container mx-auto min-h-screen">
+      <div className="flex">
+        {/* 側邊欄 - 在移動端隱藏，在桌面端固定 */}
+        <div className="hidden md:block w-72 border-r border-border/40 fixed top-0 bottom-0 pt-16">
           <AllPostsSidebar
             categories={categories}
             recentPosts={posts.slice(0, 5)}
@@ -47,36 +47,42 @@ export default async function CategoryPage({
         </div>
 
         {/* 文章列表 */}
-        <div className="flex-1 px-4 md:px-6">
-          <div className="mb-8 flex justify-between items-center">
-            <h1 className="text-3xl font-bold capitalize">
-              {currentCategory.title}
-            </h1>
-            <Link
-              href="/"
-              className={buttonVariants({ variant: "ghost", size: "sm" })}
-            >
-              <ArrowLeft className="mr-2 h-4 w-4" /> 返回首頁
-            </Link>
-          </div>
+        <div className="flex-1 md:ml-72">
+          <div className="max-w-4xl mx-auto py-10 px-6 md:px-10">
+            <div className="mb-8 flex justify-between items-center">
+              <h1 className="text-3xl font-bold capitalize">
+                {currentCategory.title}
+              </h1>
+              <Link
+                href="/"
+                className={buttonVariants({
+                  variant: "ghost",
+                  size: "sm",
+                  className: "transition-all hover:-translate-x-1",
+                })}
+              >
+                <ArrowLeft className="mr-2 h-4 w-4" /> 返回首頁
+              </Link>
+            </div>
 
-          <div className="grid gap-6">
-            {filteredPosts.length > 0 ? (
-              filteredPosts.map((post) => (
-                <PostCard
-                  key={post.slug}
-                  title={post.title}
-                  date={post.date}
-                  category={post.category}
-                  excerpt={post.excerpt}
-                  slug={post.slug}
-                />
-              ))
-            ) : (
-              <p className="text-muted-foreground text-center py-12">
-                該分類下暫無文章
-              </p>
-            )}
+            <div className="grid gap-6">
+              {filteredPosts.length > 0 ? (
+                filteredPosts.map((post) => (
+                  <PostCard
+                    key={post.slug}
+                    title={post.title}
+                    date={post.date}
+                    category={post.category}
+                    excerpt={post.excerpt}
+                    slug={post.slug}
+                  />
+                ))
+              ) : (
+                <p className="text-muted-foreground text-center py-12">
+                  該分類下暫無文章
+                </p>
+              )}
+            </div>
           </div>
         </div>
       </div>
