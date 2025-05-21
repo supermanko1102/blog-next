@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { ArrowLeft, Calendar, Tag } from "lucide-react";
+import { ArrowLeft, Calendar, Tag, BookOpen } from "lucide-react";
 import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
 import { getPostBySlug, getAllPostSlugs, getAllPosts } from "@/lib/posts";
@@ -24,54 +24,72 @@ export default async function PostPage({
     notFound();
   }
 
+  // 計算閱讀時間（每600字約1分鐘）
+  const readingTime = post.contentHtml
+    ? Math.ceil(post.contentHtml.length / 600)
+    : 5; // 預設5分鐘
+
   return (
-    <div className="container mx-auto py-8 md:px-0">
-      <div className="flex flex-col md:flex-row">
+    <div className="container mx-auto h-screen overflow-hidden">
+      <div className="flex h-full">
         {/* 分類側邊欄 - 在移動端隱藏 */}
-        <div className="hidden md:block">
+        <div className="hidden md:block w-72 border-r border-border/40">
           <CategorySidebar posts={allPosts} currentCategory={post.category} />
         </div>
 
-        {/* 文章內容 */}
-        <div className="flex-1 px-4 md:px-6 max-w-4xl">
-          <div className="mb-8">
-            <Link
-              href="/"
-              className={buttonVariants({ variant: "ghost", size: "sm" })}
-            >
-              <ArrowLeft className="mr-2 h-4 w-4" /> 返回首頁
-            </Link>
+        {/* 文章內容 - 可獨立滾動 */}
+        <div className="flex-1 overflow-y-auto h-full">
+          <div className="max-w-4xl mx-auto py-10 px-6 md:px-10">
+            <div className="mb-10 flex justify-between items-center">
+              <Link
+                href="/"
+                className={buttonVariants({
+                  variant: "ghost",
+                  size: "sm",
+                  className: "transition-all hover:-translate-x-1",
+                })}
+              >
+                <ArrowLeft className="mr-2 h-4 w-4" /> 返回首頁
+              </Link>
+
+              <Link
+                href={`/categories/${post.category}`}
+                className="text-sm px-3 py-1 rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors flex items-center gap-1.5"
+              >
+                <Tag className="h-3.5 w-3.5" />
+                <span className="capitalize">{post.category}</span>
+              </Link>
+            </div>
+
+            <article className="prose dark:prose-invert max-w-none">
+              <div className="mb-8 space-y-4">
+                <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight !mb-0">
+                  {post.title}
+                </h1>
+
+                <div className="flex items-center text-muted-foreground text-sm">
+                  <div className="flex items-center gap-1.5">
+                    <Calendar className="h-4 w-4" />
+                    <span>{post.date}</span>
+                  </div>
+                  <span className="mx-3">•</span>
+                  <div className="flex items-center gap-1.5">
+                    <BookOpen className="h-4 w-4" />
+                    <span>閱讀時間：{readingTime} 分鐘</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="leading-relaxed">
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: post.contentHtml || "",
+                  }}
+                  className="prose-img:rounded-lg prose-headings:scroll-mt-20"
+                />
+              </div>
+            </article>
           </div>
-
-          <article className="prose dark:prose-invert max-w-none">
-            <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              {post.title}
-            </h1>
-
-            <div className="flex items-center gap-4 text-muted-foreground mb-8">
-              <div className="flex items-center gap-1">
-                <Calendar className="h-4 w-4" />
-                <span>{post.date}</span>
-              </div>
-              <div className="flex items-center gap-1">
-                <Tag className="h-4 w-4" />
-                <Link
-                  href={`/categories/${post.category}`}
-                  className="hover:text-primary transition-colors capitalize"
-                >
-                  {post.category}
-                </Link>
-              </div>
-            </div>
-
-            <div className="leading-relaxed">
-              <div
-                dangerouslySetInnerHTML={{
-                  __html: post.contentHtml || "",
-                }}
-              />
-            </div>
-          </article>
         </div>
       </div>
     </div>
