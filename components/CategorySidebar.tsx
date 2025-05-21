@@ -34,7 +34,7 @@ export function CategorySidebar({
   return (
     <aside
       className={cn(
-        "h-screen py-8 px-6 flex flex-col overflow-hidden bg-muted/30 backdrop-blur-sm",
+        "h-full py-8 px-6 flex flex-col overflow-y-auto bg-muted/30 backdrop-blur-sm",
         className
       )}
     >
@@ -51,7 +51,7 @@ export function CategorySidebar({
         </p>
       </div>
 
-      <nav className="flex-1 overflow-y-auto pr-2 space-y-1.5">
+      <nav className="pr-2 space-y-1.5">
         {filteredPosts.map((post) => {
           const isActive = pathname === `/posts/${post.slug}`;
           return (

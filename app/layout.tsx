@@ -1,7 +1,6 @@
 import "./globals.css";
 import "./prism.css";
 import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
 import { ThemeProvider } from "next-themes";
 
 export default function RootLayout({
@@ -28,7 +27,6 @@ export default function RootLayout({
         >
           <Header />
           <main className="flex-1">{children}</main>
-          <Footer />
         </ThemeProvider>
       </body>
     </html>

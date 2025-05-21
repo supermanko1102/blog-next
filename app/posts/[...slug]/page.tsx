@@ -30,15 +30,15 @@ export default async function PostPage({
     : 5; // 預設5分鐘
 
   return (
-    <div className="container mx-auto h-screen overflow-hidden">
-      <div className="flex h-full">
-        {/* 分類側邊欄 - 在移動端隱藏 */}
-        <div className="hidden md:block w-72 border-r border-border/40">
+    <div className="container mx-auto min-h-screen">
+      <div className="flex">
+        {/* 分類側邊欄 - 在移動端隱藏，在桌面端固定 */}
+        <div className="hidden md:block w-72 border-r border-border/40 fixed top-0 bottom-0 pt-16">
           <CategorySidebar posts={allPosts} currentCategory={post.category} />
         </div>
 
-        {/* 文章內容 - 可獨立滾動 */}
-        <div className="flex-1 overflow-y-auto h-full">
+        {/* 文章內容 - 不再獨立滾動 */}
+        <div className="flex-1 md:ml-72">
           <div className="max-w-4xl mx-auto py-10 px-6 md:px-10">
             <div className="mb-10 flex justify-between items-center">
               <Link
