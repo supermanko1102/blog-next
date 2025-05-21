@@ -1,412 +1,348 @@
 ---
-title: Webpack資源處理
-date: 2024-04-22
-slug: webpack-asset-handling
+title: Webpack基礎知識
+date: 2024-04-20
+slug: webpack-basics
 category: webpack
 ---
 
-## 處理 JavaScript 文件
+## Webpack 是什麼？
 
-在現代前端開發中，我們經常使用 ES6+ 的語法，但由於瀏覽器支援度的問題，需要將這些現代語法轉換為兼容性更好的 ES5 代碼。Webpack 可以通過 Babel 等工具幫助我們完成這一轉換過程。
+Webpack 是一個現代 JavaScript 應用程式的靜態模組打包工具（module bundler）。當 Webpack 處理應用程式時，它會在內部建立一個依賴圖（dependency graph），這個依賴圖對應著專案中所需的每個模組，然後將所有這些模組打包成一個或多個 bundle。
 
-### 安裝 Babel 相關套件
+簡單來說，Webpack 的主要任務是：
 
-```bash
-npm install --save-dev babel-loader @babel/core @babel/preset-env
+- 將各種 JavaScript 模組及其依賴關係打包成瀏覽器可以直接運行的文件
+- 處理和轉換各種資源文件（如 CSS、圖片、字體等）
+- 優化打包結果，提升應用程式的性能
+
+Webpack 使開發者能夠採用模組化的方式開發前端應用，同時解決了瀏覽器相容性、資源管理、程式碼優化等諸多問題。
+
+## 為什麼需要 Webpack？
+
+現代前端開發面臨著許多挑戰，Webpack 的出現正是為了解決這些問題：
+
+### 1. 模組化管理
+
+在沒有打包工具之前，JavaScript 缺乏原生的模組系統。開發者要麼將所有代碼放在一個文件中，要麼通過多個 `<script>` 標籤引入多個文件，這會導致：
+
+- 全局變量衝突
+- 依賴關係不明確
+- 維護困難
+- 載入順序問題
+
+Webpack 允許使用現代模組語法（如 ES Modules、CommonJS），使代碼更加模組化和可維護。
+
+### 2. 資源處理
+
+現代網頁不僅包含 JavaScript，還包括 CSS、圖片、字體等多種資源。傳統上，這些資源需要分別處理：
+
+- 手動將 SCSS/LESS 編譯為 CSS
+- 手動優化和壓縮圖片
+- 手動管理字體文件
+
+Webpack 將這些資源視為模組，通過 loader 系統統一處理，極大地簡化了工作流程。
+
+### 3. 性能優化
+
+網頁性能是使用者體驗的重要因素，但手動優化非常繁瑣：
+
+- 壓縮和混淆 JavaScript
+- 合併文件以減少 HTTP 請求
+- 實現代碼分割和按需載入
+
+Webpack 內建了這些優化功能，幫助開發者輕鬆實現性能優化。
+
+### 4. 開發體驗提升
+
+Webpack 提供了開發服務器、熱模組替換（HMR）等功能，使開發過程更加高效：
+
+- 即時編譯和自動刷新
+- 源碼映射（Source Maps）便於調試
+- 代碼變更時只更新改變的部分
+
+## 模組化開發的意義與前端發展歷史
+
+### JavaScript 模組化的演進
+
+#### 1. 全局變量階段（早期）
+
+最初，JavaScript 程式碼都是通過全局變量進行共享：
+
+```javascript
+// math.js
+var mathUtils = {
+  add: function (a, b) {
+    return a + b;
+  },
+};
+
+// app.js
+console.log(mathUtils.add(2, 3)); // 使用全局變量 mathUtils
 ```
 
-- `babel-loader`: Webpack 與 Babel 的橋接模組
-- `@babel/core`: Babel 的核心套件
-- `@babel/preset-env`: 智能預設，根據目標環境自動決定需要的轉換和 polyfills
+這種方式容易導致命名衝突，並且難以管理依賴關係。
 
-### 配置 Webpack 使用 Babel
+#### 2. 命名空間模式
 
-在 `webpack.config.js` 中新增以下配置：
+為了減少全局變量，開發者開始使用命名空間模式：
+
+```javascript
+var MyApp = MyApp || {};
+MyApp.math = {
+  add: function (a, b) {
+    return a + b;
+  },
+};
+
+console.log(MyApp.math.add(2, 3));
+```
+
+這減少了衝突，但仍無法有效處理依賴關係。
+
+#### 3. 立即執行函數表達式（IIFE）
+
+IIFE 允許創建私有作用域，避免污染全局環境：
+
+```javascript
+var Module = (function () {
+  var privateVar = "private";
+
+  return {
+    publicMethod: function () {
+      console.log(privateVar);
+    },
+  };
+})();
+```
+
+#### 4. CommonJS
+
+Node.js 採用 CommonJS 規範，引入了 `require` 和 `module.exports` 概念：
+
+```javascript
+// math.js
+module.exports = {
+  add: function (a, b) {
+    return a + b;
+  },
+};
+
+// app.js
+const math = require("./math");
+console.log(math.add(2, 3));
+```
+
+CommonJS 的問題是它是同步載入的，不適合瀏覽器環境。
+
+#### 5. AMD（Asynchronous Module Definition）
+
+RequireJS 等工具實現了 AMD 規範，支援異步載入模組：
+
+```javascript
+define(["./math"], function (math) {
+  console.log(math.add(2, 3));
+});
+```
+
+#### 6. ES Modules（ESM）
+
+ECMAScript 2015 引入了官方模組語法：
+
+```javascript
+// math.js
+export function add(a, b) {
+  return a + b;
+}
+
+// app.js
+import { add } from "./math";
+console.log(add(2, 3));
+```
+
+ES Modules 成為現代前端標準，但舊版瀏覽器不支援。Webpack 可以將 ES Modules 轉換為兼容性更好的格式。
+
+### 模組化的意義
+
+模組化開發帶來諸多好處：
+
+1. **封裝性**：隱藏內部實現，只暴露必要接口
+2. **可重用性**：模組可在不同專案中複用
+3. **可維護性**：分離關注點，專注於單一功能
+4. **可測試性**：獨立模組易於單元測試
+5. **依賴管理**：明確的依賴關係，避免「意外」工作
+
+## Webpack 與其他構建工具的比較
+
+前端生態中有多種構建工具，各有優缺點：
+
+### Webpack 優勢
+
+- **強大的功能**：支援幾乎所有前端構建需求
+- **豐富的生態**：大量的 loader 和 plugin
+- **靈活的配置**：可高度自定義
+- **社區活躍**：大量文檔和幫助資源
+- **代碼分割**：強大的代碼分割能力
+
+### Webpack 劣勢
+
+- **配置複雜**：學習曲線較陡
+- **構建速度**：大型項目中速度較慢
+- **內存佔用**：處理大型專案時佔用較多資源
+
+### 其他工具比較
+
+#### Rollup
+
+- 優勢：更好的 Tree Shaking，生成更小的包，適合庫開發
+- 劣勢：對應用開發支持不如 Webpack 全面
+
+#### Parcel
+
+- 優勢：零配置，非常簡單易用
+- 劣勢：定制性較差，對複雜專案支持不足
+
+#### Vite
+
+- 優勢：開發環境使用原生 ES 模組，啟動速度極快
+- 劣勢：相較 Webpack 生態較小，某些特定場景支持不足
+
+#### Esbuild / SWC
+
+- 優勢：基於 Go/Rust 實現，性能極高
+- 劣勢：功能較為基礎，通常作為其他工具的底層引擎
+
+### 選擇建議
+
+- **小型項目或快速原型**：Parcel 或 Vite
+- **庫或框架開發**：Rollup
+- **複雜應用或需要精確控制**：Webpack
+- **極端性能需求**：Esbuild 或基於 SWC 的解決方案
+
+## Webpack 的核心概念
+
+Webpack 的工作原理圍繞著幾個核心概念：
+
+### 1. Entry（入口）
+
+入口指定 Webpack 從哪個模組開始建立依賴圖。默認值是 `./src/index.js`，但可以通過配置指定多個入口：
 
 ```javascript
 module.exports = {
-  // ... 其他配置
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: "babel-loader",
-          options: {
-            presets: ["@babel/preset-env"],
-          },
-        },
-      },
-    ],
+  entry: './src/app.js'
+  // 或者多入口
+  entry: {
+    main: './src/app.js',
+    vendor: './src/vendor.js'
+  }
+};
+```
+
+### 2. Output（輸出）
+
+輸出告訴 Webpack 在哪裡輸出打包結果，以及如何命名：
+
+```javascript
+const path = require("path");
+
+module.exports = {
+  output: {
+    path: path.resolve(__dirname, "dist"),
+    filename: "bundle.js",
+    // 或使用佔位符
+    // filename: '[name].[contenthash].js'
   },
 };
 ```
 
-### 創建 Babel 配置文件
+### 3. Loaders（載入器）
 
-為了更好地管理 Babel 配置，我們可以創建一個單獨的 `.babelrc` 文件：
-
-```json
-{
-  "presets": [
-    [
-      "@babel/preset-env",
-      {
-        "targets": {
-          "browsers": ["> 1%", "last 2 versions", "not ie <= 8"]
-        },
-        "useBuiltIns": "usage",
-        "corejs": 3
-      }
-    ]
-  ]
-}
-```
-
-要使用 `useBuiltIns: "usage"`，需要安裝 `core-js`：
-
-```bash
-npm install --save core-js@3
-```
-
-### 支援 React JSX
-
-如果你的專案使用 React，還需要安裝相應的 Babel 預設：
-
-```bash
-npm install --save-dev @babel/preset-react
-```
-
-然後更新 `.babelrc`：
-
-```json
-{
-  "presets": ["@babel/preset-env", "@babel/preset-react"]
-}
-```
-
-## 處理 CSS/SCSS/LESS
-
-Webpack 本身只能處理 JavaScript，但通過 loader 可以處理各種 CSS 文件。
-
-### 處理純 CSS
-
-首先安裝必要的 loader：
-
-```bash
-npm install --save-dev style-loader css-loader
-```
-
-- `css-loader`: 解析 CSS 文件，處理 `@import` 和 `url()`
-- `style-loader`: 將 CSS 注入到 DOM 中的 `<style>` 標籤
-
-在 `webpack.config.js` 中增加配置：
+Webpack 原生只能處理 JavaScript 和 JSON 文件。Loaders 允許 Webpack 處理其他類型的文件，並將它們轉換為有效模組：
 
 ```javascript
 module.exports = {
-  // ... 其他配置
   module: {
     rules: [
-      // ... 其他規則
       {
         test: /\.css$/,
         use: ["style-loader", "css-loader"],
       },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: "babel-loader",
+      },
     ],
   },
 };
 ```
 
-注意 loader 的順序是從右到左執行的，先用 `css-loader` 處理，再用 `style-loader` 注入。
+常見的 loaders：
 
-### 處理 SCSS/SASS
+- `babel-loader`: 將 ES6+ 轉換為 ES5
+- `css-loader`: 解析 CSS 文件及其依賴
+- `style-loader`: 將 CSS 注入到 DOM
+- `file-loader`: 處理文件導入
+- `url-loader`: 將檔案轉換為 base64 URL
 
-對於 SCSS/SASS，需要額外的處理器：
+### 4. Plugins（插件）
 
-```bash
-npm install --save-dev sass-loader sass
-```
-
-然後更新配置：
-
-```javascript
-{
-  test: /\.s[ac]ss$/,
-  use: [
-    'style-loader',
-    'css-loader',
-    'sass-loader'
-  ]
-}
-```
-
-### 處理 LESS
-
-類似地，處理 LESS 需要：
-
-```bash
-npm install --save-dev less-loader less
-```
-
-配置如下：
+Plugins 用於執行更廣泛的任務，比如打包優化、資源管理、環境變數注入等：
 
 ```javascript
-{
-  test: /\.less$/,
-  use: [
-    'style-loader',
-    'css-loader',
-    'less-loader'
-  ]
-}
-```
-
-### 使用 PostCSS
-
-PostCSS 是一個強大的 CSS 處理工具，可以自動添加 CSS 前綴等：
-
-```bash
-npm install --save-dev postcss-loader postcss autoprefixer
-```
-
-創建 `postcss.config.js`：
-
-```javascript
-module.exports = {
-  plugins: [require("autoprefixer")],
-};
-```
-
-更新 Webpack 配置：
-
-```javascript
-{
-  test: /\.css$/,
-  use: [
-    'style-loader',
-    'css-loader',
-    'postcss-loader'
-  ]
-}
-```
-
-### 提取 CSS 到單獨文件
-
-在生產環境中，最好將 CSS 提取到單獨的文件：
-
-```bash
-npm install --save-dev mini-css-extract-plugin
-```
-
-更新配置：
-
-```javascript
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-  // ... 其他配置
   plugins: [
+    new HtmlWebpackPlugin({
+      template: "./src/index.html",
+    }),
     new MiniCssExtractPlugin({
       filename: "[name].[contenthash].css",
     }),
   ],
-  module: {
-    rules: [
-      {
-        test: /\.css$/,
-        use: [
-          process.env.NODE_ENV === "production"
-            ? MiniCssExtractPlugin.loader
-            : "style-loader",
-          "css-loader",
-        ],
-      },
-    ],
-  },
 };
 ```
 
-## 處理圖片和字體
+常見的 plugins：
 
-Webpack 可以通過不同的方式處理圖片、字體等資源。
+- `HtmlWebpackPlugin`: 生成 HTML 文件並自動注入打包結果
+- `MiniCssExtractPlugin`: 將 CSS 提取到單獨文件
+- `CleanWebpackPlugin`: 打包前清理輸出目錄
+- `DefinePlugin`: 定義環境變數
+- `CopyWebpackPlugin`: 複製文件或目錄
 
-### 在 Webpack 4 中處理資源
+### 5. Mode（模式）
 
-在 Webpack 4 中，我們使用 `file-loader` 和 `url-loader`：
-
-```bash
-npm install --save-dev file-loader url-loader
-```
-
-更新配置：
+Mode 指示 Webpack 使用相應的內置優化：
 
 ```javascript
 module.exports = {
-  // ... 其他配置
-  module: {
-    rules: [
-      // ... 其他規則
-      {
-        test: /\.(png|jpe?g|gif|svg)$/i,
-        use: [
-          {
-            loader: "url-loader",
-            options: {
-              limit: 8192, // 小於 8kb 的圖片會被轉為 base64
-              name: "images/[name].[hash:7].[ext]",
-            },
-          },
-        ],
-      },
-      {
-        test: /\.(woff2?|eot|ttf|otf)$/i,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "fonts/[name].[hash:7].[ext]",
-            },
-          },
-        ],
-      },
-    ],
-  },
+  mode: "development", // 或 'production', 'none'
 };
 ```
 
-## 使用 file-loader 和 url-loader
+- `development`: 友好的錯誤訊息、快速的增量編譯
+- `production`: 代碼壓縮、優化等生產環境特性
+- `none`: 無預設優化
 
-`file-loader` 和 `url-loader` 是 Webpack 4 中處理靜態資源的主要工具。
+### 6. Resolve（解析）
 
-### file-loader
-
-`file-loader` 將文件發送到輸出目錄，並返回（相對）URL。
-
-**主要用途**：處理字體、PDF、視頻等需要保留為獨立文件的資源。
-
-**配置示例**：
-
-```javascript
-{
-  test: /\.(woff|woff2|eot|ttf|otf)$/,
-  use: [
-    {
-      loader: 'file-loader',
-      options: {
-        name: '[name].[contenthash].[ext]',
-        outputPath: 'fonts/'
-      }
-    }
-  ]
-}
-```
-
-**重要選項**：
-
-- `name`: 設定輸出文件的名稱模板
-- `outputPath`: 設定文件輸出目錄
-- `publicPath`: 覆蓋 output.publicPath
-
-### url-loader
-
-`url-loader` 類似於 `file-loader`，但可以將小於指定大小的文件轉換為 Data URLs。
-
-**主要用途**：處理小圖片，轉為 base64 編碼嵌入代碼，減少 HTTP 請求。
-
-**配置示例**：
-
-```javascript
-{
-  test: /\.(png|jpg|gif)$/i,
-  use: [
-    {
-      loader: 'url-loader',
-      options: {
-        limit: 8192, // 8kb
-        name: '[name].[contenthash].[ext]',
-        outputPath: 'images/'
-      }
-    }
-  ]
-}
-```
-
-**重要選項**：
-
-- `limit`: 文件大小超過限制時，將使用 `file-loader` 處理
-- `fallback`: 可以指定超過限制時使用的 loader
-
-### 使用場景選擇
-
-- 小圖片、圖標：使用 `url-loader` 轉為 base64
-- 大圖片：使用 `file-loader` 保持為獨立文件
-- 字體文件：通常使用 `file-loader`
-
-## 使用 Asset Modules（Webpack 5）
-
-Webpack 5 引入了內置的 Asset Modules，可以替代 `file-loader`、`url-loader` 和 `raw-loader`。
-
-### 四種資源模組類型
-
-1. `asset/resource` - 發送一個單獨的文件並導出 URL（類似 `file-loader`）
-2. `asset/inline` - 導出資源的 Data URL（類似 `url-loader`）
-3. `asset/source` - 導出資源的源代碼（類似 `raw-loader`）
-4. `asset` - 自動選擇，類似於 `url-loader` 的 limit 功能
-
-### 更新 Webpack 5 配置
+Resolve 配置 Webpack 如何解析模組：
 
 ```javascript
 module.exports = {
-  // ... 其他配置
-  output: {
-    // ... 其他輸出配置
-    assetModuleFilename: "assets/[hash][ext][query]",
-  },
-  module: {
-    rules: [
-      // 圖片處理
-      {
-        test: /\.(png|jpe?g|gif|svg)$/i,
-        type: "asset",
-        parser: {
-          dataUrlCondition: {
-            maxSize: 8 * 1024, // 8kb
-          },
-        },
-        generator: {
-          filename: "images/[hash][ext][query]",
-        },
-      },
-      // 字體處理
-      {
-        test: /\.(woff|woff2|eot|ttf|otf)$/i,
-        type: "asset/resource",
-        generator: {
-          filename: "fonts/[hash][ext][query]",
-        },
-      },
-    ],
+  resolve: {
+    extensions: [".js", ".jsx", ".ts", ".tsx"],
+    alias: {
+      "@components": path.resolve(__dirname, "src/components"),
+    },
   },
 };
 ```
-
-### Asset Modules 的優勢
-
-1. **內置支援**：不需要安裝額外的 loader
-2. **配置簡化**：語法更簡潔清晰
-3. **性能優化**：Webpack 5 的資源處理效率更高
-4. **更好的緩存**：更精細的緩存控制
 
 ## 總結
 
-在本章中，我們學習了如何使用 Webpack 處理各種資源類型：
+Webpack 是現代前端開發中不可或缺的構建工具，它解決了模組管理、資源處理和性能優化等關鍵問題。通過理解 JavaScript 模組化的歷史演進，以及 Webpack 的核心概念，我們可以更好地掌握這個強大工具。
 
-1. 使用 Babel 處理現代 JavaScript 代碼
-2. 處理 CSS 及其預處理器（SCSS/LESS）
-3. 處理圖片和字體等靜態資源
-4. 對比了 Webpack 4 的 file-loader/url-loader 和 Webpack 5 的 Asset Modules
-
-通過合理配置這些資源處理方式，我們可以使前端開發更加高效，同時優化最終的打包結果。
-
-在下一章中，我們將深入探討 Webpack 的 Loader 系統，學習更多關於 Loader 的工作原理和自定義 Loader 的知識。
+在下一章，我們將學習如何安裝 Webpack 並創建基本配置，開始實踐使用 Webpack 進行前端構建。
