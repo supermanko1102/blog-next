@@ -233,15 +233,18 @@ module.exports = {
 
 Webpack 提供多種 Source Maps 類型，根據需求平衡構建速度和調試體驗：
 
+```javascript
+
 | 類型                           | 描述                                                   | 構建速度 | 重構建速度 | 品質 | 生產環境適用 |
 | ------------------------------ | ------------------------------------------------------ | -------- | ---------- | ---- | ------------ |
 | `eval`                         | 每個模組使用 eval() 執行，通過 //# sourceURL 添加引用  | +++      | +++        | +    | ❌           |
-| `eval-source-map`              | 每個模組使用 eval() 執行，並生成 Source Maps           | --       | +          | ++   | ❌           |
-| `cheap-eval-source-map`        | 類似 eval-source-map，不包含列映射，只映射到轉譯後代碼 | +        | ++         | +    | ❌           |
-| `cheap-module-eval-source-map` | 類似 cheap-eval-source-map，但映射到原始代碼           | -        | +          | ++   | ❌           |
-| `source-map`                   | 生成完整的 Source Maps 文件                            | --       | --         | +++  | ✓            |
-| `hidden-source-map`            | 與 source-map 相同，但不在 bundle 中添加引用           | --       | --         | +++  | ✓            |
+| `eval-source-map`              | 每個模組使用 eval() 執行，並生成 Source Maps          | --       | +          | ++   | ❌           |
+| `cheap-eval-source-map`        | 類似 eval-source-map，不包含列映射，只映射到轉譯後代碼   | +        | ++         | +    | ❌           |
+| `cheap-module-eval-source-map` | 類似 cheap-eval-source-map，但映射到原始代碼          | -        | +          | ++   | ❌           |
+| `source-map`                   | 生成完整的 Source Maps 文件                         | --       | --         | +++  | ✓            |
+| `hidden-source-map`            | 與 source-map 相同，但不在 bundle 中添加引用          | --       | --         | +++  | ✓            |
 | `nosources-source-map`         | 沒有源代碼內容的 Source Map，但保留行號映射            | --       | --         | ++   | ✓            |
+```
 
 ### 常見的環境配置建議
 
