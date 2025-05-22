@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { ArrowLeft, Calendar, Tag, BookOpen } from "lucide-react";
+import { ArrowLeft, Calendar, Tag } from "lucide-react";
 import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
 import { getPostBySlug, getAllPostSlugs, getAllPosts } from "@/lib/posts";
@@ -23,11 +23,6 @@ export default async function PostPage({
   if (!post) {
     notFound();
   }
-
-  // 計算閱讀時間（每600字約1分鐘）
-  const readingTime = post.contentHtml
-    ? Math.ceil(post.contentHtml.length / 600)
-    : 5; // 預設5分鐘
 
   return (
     <div className="container mx-auto min-h-screen">
@@ -71,11 +66,6 @@ export default async function PostPage({
                   <div className="flex items-center gap-1.5">
                     <Calendar className="h-4 w-4" />
                     <span>{post.date}</span>
-                  </div>
-                  <span className="mx-3">•</span>
-                  <div className="flex items-center gap-1.5">
-                    <BookOpen className="h-4 w-4" />
-                    <span>閱讀時間：{readingTime} 分鐘</span>
                   </div>
                 </div>
               </div>

@@ -1,6 +1,6 @@
 ---
 title: Webpack安裝與配置
-date: 2024-04-21
+date: 2025-04-21
 slug: webpack-installation-configuration
 category: webpack
 ---

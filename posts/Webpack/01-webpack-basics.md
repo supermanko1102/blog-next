@@ -1,6 +1,6 @@
 ---
 title: Webpack基礎知識
-date: 2024-04-20
+date: 2025-04-20
 slug: webpack-basics
 category: webpack
 ---
@@ -228,11 +228,11 @@ Webpack 的工作原理圍繞著幾個核心概念：
 
 ```javascript
 module.exports = {
-  entry: './src/app.js'
+  entry: "./src/app.js"
   // 或者多入口
   entry: {
-    main: './src/app.js',
-    vendor: './src/vendor.js'
+    main: "./src/app.js",
+    vendor: "./src/vendor.js"
   }
 };
 ```
@@ -249,7 +249,7 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
     // 或使用佔位符
-    // filename: '[name].[contenthash].js'
+    // filename: "[name].[contenthash].js"
   },
 };
 ```
@@ -318,7 +318,7 @@ Mode 指示 Webpack 使用相應的內置優化：
 
 ```javascript
 module.exports = {
-  mode: "development", // 或 'production', 'none'
+  mode: "development", // 或 "production", "none"
 };
 ```
 

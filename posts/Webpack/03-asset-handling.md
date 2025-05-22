@@ -1,6 +1,6 @@
 ---
 title: Webpack資源處理
-date: 2024-05-22
+date: 2025-04-24
 slug: webpack-asset-handling
 category: webpack
 ---

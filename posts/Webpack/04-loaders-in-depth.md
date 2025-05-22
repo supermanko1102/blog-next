@@ -1,6 +1,6 @@
 ---
 title: Webpack Loader深入理解
-date: 2024-05-23
+date: 2025-04-25
 slug: webpack-loaders-in-depth
 category: webpack
 ---
@@ -639,5 +639,3 @@ const getStyleLoaders = (cssOptions, preProcessor) => {
 Webpack loader 是一個強大的系統，它使 Webpack 能夠處理各種類型的文件。本章我們深入了解了 loader 的工作原理、常用 loader、鏈式調用、自定義 loader 開發以及配置技巧與優化。
 
 通過合理配置和使用 loader，我們能夠創建高效、靈活的前端構建流程，處理從 JavaScript 到各種資源文件的所有轉換需求。loader 的強大在於它的可組合性和可擴展性，使 Webpack 能夠適應幾乎所有前端開發場景。
-
-在實際開發中，選擇合適的 loader
